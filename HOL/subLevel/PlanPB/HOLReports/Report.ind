@@ -1,0 +1,59 @@
+\begin{theindex}
+
+  \item \textbf  {PlanPBDef Theory}, 16
+    \subitem Definitions, 16
+      \subsubitem PL_notWARNO_Auth_def, 16
+      \subsubitem PL_WARNO_Auth_def, 16
+      \subsubitem secContext_def, 16
+      \subsubitem secContextNull_def, 17
+    \subitem Theorems, 17
+      \subsubitem getInitMove_def, 17
+      \subsubitem getInitMove_ind, 19
+      \subsubitem getPlCom_def, 21
+      \subsubitem getPlCom_ind, 22
+      \subsubitem getPsgCom_def, 24
+      \subsubitem getPsgCom_ind, 25
+      \subsubitem getRecon_def, 27
+      \subsubitem getRecon_ind, 30
+      \subsubitem getReport_def, 32
+      \subsubitem getReport_ind, 35
+      \subsubitem getTenativePlan_def, 37
+      \subsubitem getTenativePlan_ind, 41
+  \item \textbf  {PlanPBType Theory}, 3
+    \subitem Datatypes, 3
+    \subitem Theorems, 3
+      \subsubitem plCommand_distinct_clauses, 3
+      \subsubitem psgCommand_distinct_clauses, 4
+      \subsubitem slCommand_distinct_clauses, 4
+      \subsubitem slCommand_one_one, 4
+      \subsubitem slOutput_distinct_clauses, 4
+      \subsubitem slRole_distinct_clauses, 5
+      \subsubitem slState_distinct_clauses, 5
+
+  \indexspace
+
+  \item \textbf  {ssmPlanPB Theory}, 6
+    \subitem Theorems, 6
+      \subsubitem inputOK_def, 6
+      \subsubitem inputOK_ind, 7
+      \subsubitem planPBNS_def, 7
+      \subsubitem planPBNS_ind, 8
+      \subsubitem planPBOut_def, 8
+      \subsubitem planPBOut_ind, 9
+      \subsubitem PlatoonLeader_notWARNO_notreport1_exec_plCommand_justified_lemma, 
+		9
+      \subsubitem PlatoonLeader_notWARNO_notreport1_exec_plCommand_justified_thm, 
+		10
+      \subsubitem PlatoonLeader_notWARNO_notreport1_exec_plCommand_lemma, 
+		10
+      \subsubitem PlatoonLeader_psgCommand_notDiscard_thm, 11
+      \subsubitem PlatoonLeader_trap_psgCommand_justified_lemma, 11
+      \subsubitem PlatoonLeader_trap_psgCommand_lemma, 11
+      \subsubitem PlatoonLeader_WARNO_exec_report1_justified_lemma, 12
+      \subsubitem PlatoonLeader_WARNO_exec_report1_justified_thm, 13
+      \subsubitem PlatoonLeader_WARNO_exec_report1_lemma, 14
+      \subsubitem PlatoonSergeant_trap_plCommand_justified_lemma, 15
+      \subsubitem PlatoonSergeant_trap_plCommand_justified_thm, 15
+      \subsubitem PlatoonSergeant_trap_plCommand_lemma, 16
+
+\end{theindex}

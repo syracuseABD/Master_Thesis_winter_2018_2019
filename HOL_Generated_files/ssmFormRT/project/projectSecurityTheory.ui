@@ -1,0 +1,6 @@
+$(HOLDIR)/sigobj/Overlay
+$(HOLDIR)/sigobj/Thm
+$(HOLDIR)/sigobj/term_grammar
+$(HOLDIR)/sigobj/type_grammar
+/home/sun_goddess/Desktop/MT_winter_2018_2019/HOLGenerator_winter_2018_2019_MT/HOL/project/projectSecurityTheory
+/home/sun_goddess/Desktop/MT_winter_2018_2019/HOLGenerator_winter_2018_2019_MT/HOL/project/projectSecurityTheory.sig

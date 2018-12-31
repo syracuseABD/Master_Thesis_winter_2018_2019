@@ -1,0 +1,306 @@
+\newcommand{\HOLprojectAssuranceExecDate}{27 December 2018}
+\newcommand{\HOLprojectAssuranceExecTime}{12:52}
+\begin{SaveVerbatim}{HOLprojectAssuranceExecTheoremsRTXXALERTXXexecXXcompleteXXlemmaOne}
+\HOLTokenTurnstile{} \HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{M} \HOLBoundVar{Oi} \HOLBoundVar{Os}.
+     \HOLConst{CFGInterpret} (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os})
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth}
+          ([\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+            \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{complete}))]\HOLSymConst{::}\HOLFreeVar{ins})
+          \HOLConst{RT_ALERT} \HOLFreeVar{outs}) \HOLSymConst{\HOLTokenImp{}}
+     (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os}) \HOLConst{satList}
+     \HOLConst{propCommandList}
+       [\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+        \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{complete}))]
+\end{SaveVerbatim}
+\newcommand{\HOLprojectAssuranceExecTheoremsRTXXALERTXXexecXXcompleteXXlemmaOne}{\UseVerbatim{HOLprojectAssuranceExecTheoremsRTXXALERTXXexecXXcompleteXXlemmaOne}}
+\begin{SaveVerbatim}{HOLprojectAssuranceExecTheoremsRTXXALERTXXexecXXcompleteXXlemmaTwo}
+\HOLTokenTurnstile{} \HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{NS} \HOLBoundVar{Out} \HOLBoundVar{M} \HOLBoundVar{Oi} \HOLBoundVar{Os}.
+     \HOLConst{TR} (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os})
+       (\HOLConst{exec}
+          (\HOLConst{inputList}
+             [\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+              \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{complete}))]))
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth}
+          ([\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+            \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{complete}))]\HOLSymConst{::}\HOLFreeVar{ins})
+          \HOLConst{RT_ALERT} \HOLFreeVar{outs})
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth} \HOLFreeVar{ins}
+          (\HOLBoundVar{NS} \HOLConst{RT_ALERT}
+             (\HOLConst{exec}
+                (\HOLConst{inputList}
+                   [\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+                    \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{complete}))])))
+          (\HOLBoundVar{Out} \HOLConst{RT_ALERT}
+             (\HOLConst{exec}
+                (\HOLConst{inputList}
+                   [\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+                    \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{complete}))]))\HOLSymConst{::}
+               \HOLFreeVar{outs})) \HOLSymConst{\HOLTokenEquiv{}}
+     \HOLConst{authenticationTest} \HOLConst{authentication}
+       [\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+        \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{complete}))] \HOLSymConst{\HOLTokenConj{}}
+     \HOLConst{CFGInterpret} (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os})
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth}
+          ([\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+            \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{complete}))]\HOLSymConst{::}\HOLFreeVar{ins})
+          \HOLConst{RT_ALERT} \HOLFreeVar{outs}) \HOLSymConst{\HOLTokenConj{}}
+     (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os}) \HOLConst{satList}
+     \HOLConst{propCommandList}
+       [\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+        \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{complete}))]
+\end{SaveVerbatim}
+\newcommand{\HOLprojectAssuranceExecTheoremsRTXXALERTXXexecXXcompleteXXlemmaTwo}{\UseVerbatim{HOLprojectAssuranceExecTheoremsRTXXALERTXXexecXXcompleteXXlemmaTwo}}
+\begin{SaveVerbatim}{HOLprojectAssuranceExecTheoremsRTXXALERTXXexecXXcompleteXXthm}
+\HOLTokenTurnstile{} \HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{NS} \HOLBoundVar{Out} \HOLBoundVar{M} \HOLBoundVar{Oi} \HOLBoundVar{Os}.
+     \HOLConst{TR} (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os}) (\HOLConst{exec} [\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{complete})])
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth}
+          ([\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+            \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{complete}))]\HOLSymConst{::}\HOLFreeVar{ins})
+          \HOLConst{RT_ALERT} \HOLFreeVar{outs})
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth} \HOLFreeVar{ins}
+          (\HOLBoundVar{NS} \HOLConst{RT_ALERT} (\HOLConst{exec} [\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{complete})]))
+          (\HOLBoundVar{Out} \HOLConst{RT_ALERT}
+             (\HOLConst{exec} [\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{complete})])\HOLSymConst{::}\HOLFreeVar{outs})) \HOLSymConst{\HOLTokenEquiv{}}
+     \HOLConst{authenticationTest} \HOLConst{authentication}
+       [\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+        \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{complete}))] \HOLSymConst{\HOLTokenConj{}}
+     \HOLConst{CFGInterpret} (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os})
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth}
+          ([\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+            \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{complete}))]\HOLSymConst{::}\HOLFreeVar{ins})
+          \HOLConst{RT_ALERT} \HOLFreeVar{outs}) \HOLSymConst{\HOLTokenConj{}}
+     (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os}) \HOLConst{satList} [\HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{complete}))]
+\end{SaveVerbatim}
+\newcommand{\HOLprojectAssuranceExecTheoremsRTXXALERTXXexecXXcompleteXXthm}{\UseVerbatim{HOLprojectAssuranceExecTheoremsRTXXALERTXXexecXXcompleteXXthm}}
+\begin{SaveVerbatim}{HOLprojectAssuranceExecTheoremsRTXXFORMXXexecXXrtPositionXXlemmaOne}
+\HOLTokenTurnstile{} \HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{M} \HOLBoundVar{Oi} \HOLBoundVar{Os}.
+     \HOLConst{CFGInterpret} (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os})
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth}
+          ([\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+            \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtPosition}))]\HOLSymConst{::}\HOLFreeVar{ins})
+          \HOLConst{RT_FORM} \HOLFreeVar{outs}) \HOLSymConst{\HOLTokenImp{}}
+     (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os}) \HOLConst{satList}
+     \HOLConst{propCommandList}
+       [\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+        \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtPosition}))]
+\end{SaveVerbatim}
+\newcommand{\HOLprojectAssuranceExecTheoremsRTXXFORMXXexecXXrtPositionXXlemmaOne}{\UseVerbatim{HOLprojectAssuranceExecTheoremsRTXXFORMXXexecXXrtPositionXXlemmaOne}}
+\begin{SaveVerbatim}{HOLprojectAssuranceExecTheoremsRTXXFORMXXexecXXrtPositionXXlemmaTwo}
+\HOLTokenTurnstile{} \HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{NS} \HOLBoundVar{Out} \HOLBoundVar{M} \HOLBoundVar{Oi} \HOLBoundVar{Os}.
+     \HOLConst{TR} (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os})
+       (\HOLConst{exec}
+          (\HOLConst{inputList}
+             [\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+              \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtPosition}))]))
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth}
+          ([\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+            \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtPosition}))]\HOLSymConst{::}\HOLFreeVar{ins})
+          \HOLConst{RT_FORM} \HOLFreeVar{outs})
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth} \HOLFreeVar{ins}
+          (\HOLBoundVar{NS} \HOLConst{RT_FORM}
+             (\HOLConst{exec}
+                (\HOLConst{inputList}
+                   [\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+                    \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtPosition}))])))
+          (\HOLBoundVar{Out} \HOLConst{RT_FORM}
+             (\HOLConst{exec}
+                (\HOLConst{inputList}
+                   [\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+                    \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtPosition}))]))\HOLSymConst{::}
+               \HOLFreeVar{outs})) \HOLSymConst{\HOLTokenEquiv{}}
+     \HOLConst{authenticationTest} \HOLConst{authentication}
+       [\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+        \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtPosition}))] \HOLSymConst{\HOLTokenConj{}}
+     \HOLConst{CFGInterpret} (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os})
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth}
+          ([\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+            \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtPosition}))]\HOLSymConst{::}\HOLFreeVar{ins})
+          \HOLConst{RT_FORM} \HOLFreeVar{outs}) \HOLSymConst{\HOLTokenConj{}}
+     (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os}) \HOLConst{satList}
+     \HOLConst{propCommandList}
+       [\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+        \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtPosition}))]
+\end{SaveVerbatim}
+\newcommand{\HOLprojectAssuranceExecTheoremsRTXXFORMXXexecXXrtPositionXXlemmaTwo}{\UseVerbatim{HOLprojectAssuranceExecTheoremsRTXXFORMXXexecXXrtPositionXXlemmaTwo}}
+\begin{SaveVerbatim}{HOLprojectAssuranceExecTheoremsRTXXFORMXXexecXXrtPositionXXthm}
+\HOLTokenTurnstile{} \HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{NS} \HOLBoundVar{Out} \HOLBoundVar{M} \HOLBoundVar{Oi} \HOLBoundVar{Os}.
+     \HOLConst{TR} (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os}) (\HOLConst{exec} [\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtPosition})])
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth}
+          ([\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+            \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtPosition}))]\HOLSymConst{::}\HOLFreeVar{ins})
+          \HOLConst{RT_FORM} \HOLFreeVar{outs})
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth} \HOLFreeVar{ins}
+          (\HOLBoundVar{NS} \HOLConst{RT_FORM} (\HOLConst{exec} [\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtPosition})]))
+          (\HOLBoundVar{Out} \HOLConst{RT_FORM}
+             (\HOLConst{exec} [\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtPosition})])\HOLSymConst{::}
+               \HOLFreeVar{outs})) \HOLSymConst{\HOLTokenEquiv{}}
+     \HOLConst{authenticationTest} \HOLConst{authentication}
+       [\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+        \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtPosition}))] \HOLSymConst{\HOLTokenConj{}}
+     \HOLConst{CFGInterpret} (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os})
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth}
+          ([\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+            \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtPosition}))]\HOLSymConst{::}\HOLFreeVar{ins})
+          \HOLConst{RT_FORM} \HOLFreeVar{outs}) \HOLSymConst{\HOLTokenConj{}}
+     (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os}) \HOLConst{satList} [\HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtPosition}))]
+\end{SaveVerbatim}
+\newcommand{\HOLprojectAssuranceExecTheoremsRTXXFORMXXexecXXrtPositionXXthm}{\UseVerbatim{HOLprojectAssuranceExecTheoremsRTXXFORMXXexecXXrtPositionXXthm}}
+\begin{SaveVerbatim}{HOLprojectAssuranceExecTheoremsRTXXORIENTXXexecXXrtAlertXXlemmaOne}
+\HOLTokenTurnstile{} \HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{M} \HOLBoundVar{Oi} \HOLBoundVar{Os}.
+     \HOLConst{CFGInterpret} (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os})
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth}
+          ([\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+            \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtAlert}))]\HOLSymConst{::}\HOLFreeVar{ins})
+          \HOLConst{RT_ORIENT} \HOLFreeVar{outs}) \HOLSymConst{\HOLTokenImp{}}
+     (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os}) \HOLConst{satList}
+     \HOLConst{propCommandList}
+       [\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+        \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtAlert}))]
+\end{SaveVerbatim}
+\newcommand{\HOLprojectAssuranceExecTheoremsRTXXORIENTXXexecXXrtAlertXXlemmaOne}{\UseVerbatim{HOLprojectAssuranceExecTheoremsRTXXORIENTXXexecXXrtAlertXXlemmaOne}}
+\begin{SaveVerbatim}{HOLprojectAssuranceExecTheoremsRTXXORIENTXXexecXXrtAlertXXlemmaTwo}
+\HOLTokenTurnstile{} \HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{NS} \HOLBoundVar{Out} \HOLBoundVar{M} \HOLBoundVar{Oi} \HOLBoundVar{Os}.
+     \HOLConst{TR} (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os})
+       (\HOLConst{exec}
+          (\HOLConst{inputList}
+             [\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+              \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtAlert}))]))
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth}
+          ([\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+            \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtAlert}))]\HOLSymConst{::}\HOLFreeVar{ins})
+          \HOLConst{RT_ORIENT} \HOLFreeVar{outs})
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth} \HOLFreeVar{ins}
+          (\HOLBoundVar{NS} \HOLConst{RT_ORIENT}
+             (\HOLConst{exec}
+                (\HOLConst{inputList}
+                   [\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+                    \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtAlert}))])))
+          (\HOLBoundVar{Out} \HOLConst{RT_ORIENT}
+             (\HOLConst{exec}
+                (\HOLConst{inputList}
+                   [\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+                    \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtAlert}))]))\HOLSymConst{::}
+               \HOLFreeVar{outs})) \HOLSymConst{\HOLTokenEquiv{}}
+     \HOLConst{authenticationTest} \HOLConst{authentication}
+       [\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+        \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtAlert}))] \HOLSymConst{\HOLTokenConj{}}
+     \HOLConst{CFGInterpret} (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os})
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth}
+          ([\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+            \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtAlert}))]\HOLSymConst{::}\HOLFreeVar{ins})
+          \HOLConst{RT_ORIENT} \HOLFreeVar{outs}) \HOLSymConst{\HOLTokenConj{}}
+     (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os}) \HOLConst{satList}
+     \HOLConst{propCommandList}
+       [\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+        \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtAlert}))]
+\end{SaveVerbatim}
+\newcommand{\HOLprojectAssuranceExecTheoremsRTXXORIENTXXexecXXrtAlertXXlemmaTwo}{\UseVerbatim{HOLprojectAssuranceExecTheoremsRTXXORIENTXXexecXXrtAlertXXlemmaTwo}}
+\begin{SaveVerbatim}{HOLprojectAssuranceExecTheoremsRTXXORIENTXXexecXXrtAlertXXthm}
+\HOLTokenTurnstile{} \HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{NS} \HOLBoundVar{Out} \HOLBoundVar{M} \HOLBoundVar{Oi} \HOLBoundVar{Os}.
+     \HOLConst{TR} (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os}) (\HOLConst{exec} [\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtAlert})])
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth}
+          ([\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+            \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtAlert}))]\HOLSymConst{::}\HOLFreeVar{ins})
+          \HOLConst{RT_ORIENT} \HOLFreeVar{outs})
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth} \HOLFreeVar{ins}
+          (\HOLBoundVar{NS} \HOLConst{RT_ORIENT} (\HOLConst{exec} [\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtAlert})]))
+          (\HOLBoundVar{Out} \HOLConst{RT_ORIENT}
+             (\HOLConst{exec} [\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtAlert})])\HOLSymConst{::}\HOLFreeVar{outs})) \HOLSymConst{\HOLTokenEquiv{}}
+     \HOLConst{authenticationTest} \HOLConst{authentication}
+       [\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+        \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtAlert}))] \HOLSymConst{\HOLTokenConj{}}
+     \HOLConst{CFGInterpret} (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os})
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth}
+          ([\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+            \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtAlert}))]\HOLSymConst{::}\HOLFreeVar{ins})
+          \HOLConst{RT_ORIENT} \HOLFreeVar{outs}) \HOLSymConst{\HOLTokenConj{}}
+     (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os}) \HOLConst{satList} [\HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtAlert}))]
+\end{SaveVerbatim}
+\newcommand{\HOLprojectAssuranceExecTheoremsRTXXORIENTXXexecXXrtAlertXXthm}{\UseVerbatim{HOLprojectAssuranceExecTheoremsRTXXORIENTXXexecXXrtAlertXXthm}}
+\begin{SaveVerbatim}{HOLprojectAssuranceExecTheoremsRTXXPOSITIONXXexecXXrtOrientXXlemmaOne}
+\HOLTokenTurnstile{} \HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{M} \HOLBoundVar{Oi} \HOLBoundVar{Os}.
+     \HOLConst{CFGInterpret} (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os})
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth}
+          ([\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+            \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtOrient}))]\HOLSymConst{::}\HOLFreeVar{ins})
+          \HOLConst{RT_POSITION} \HOLFreeVar{outs}) \HOLSymConst{\HOLTokenImp{}}
+     (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os}) \HOLConst{satList}
+     \HOLConst{propCommandList}
+       [\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+        \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtOrient}))]
+\end{SaveVerbatim}
+\newcommand{\HOLprojectAssuranceExecTheoremsRTXXPOSITIONXXexecXXrtOrientXXlemmaOne}{\UseVerbatim{HOLprojectAssuranceExecTheoremsRTXXPOSITIONXXexecXXrtOrientXXlemmaOne}}
+\begin{SaveVerbatim}{HOLprojectAssuranceExecTheoremsRTXXPOSITIONXXexecXXrtOrientXXlemmaTwo}
+\HOLTokenTurnstile{} \HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{NS} \HOLBoundVar{Out} \HOLBoundVar{M} \HOLBoundVar{Oi} \HOLBoundVar{Os}.
+     \HOLConst{TR} (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os})
+       (\HOLConst{exec}
+          (\HOLConst{inputList}
+             [\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+              \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtOrient}))]))
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth}
+          ([\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+            \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtOrient}))]\HOLSymConst{::}\HOLFreeVar{ins})
+          \HOLConst{RT_POSITION} \HOLFreeVar{outs})
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth} \HOLFreeVar{ins}
+          (\HOLBoundVar{NS} \HOLConst{RT_POSITION}
+             (\HOLConst{exec}
+                (\HOLConst{inputList}
+                   [\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+                    \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtOrient}))])))
+          (\HOLBoundVar{Out} \HOLConst{RT_POSITION}
+             (\HOLConst{exec}
+                (\HOLConst{inputList}
+                   [\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+                    \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtOrient}))]))\HOLSymConst{::}
+               \HOLFreeVar{outs})) \HOLSymConst{\HOLTokenEquiv{}}
+     \HOLConst{authenticationTest} \HOLConst{authentication}
+       [\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+        \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtOrient}))] \HOLSymConst{\HOLTokenConj{}}
+     \HOLConst{CFGInterpret} (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os})
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth}
+          ([\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+            \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtOrient}))]\HOLSymConst{::}\HOLFreeVar{ins})
+          \HOLConst{RT_POSITION} \HOLFreeVar{outs}) \HOLSymConst{\HOLTokenConj{}}
+     (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os}) \HOLConst{satList}
+     \HOLConst{propCommandList}
+       [\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+        \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtOrient}))]
+\end{SaveVerbatim}
+\newcommand{\HOLprojectAssuranceExecTheoremsRTXXPOSITIONXXexecXXrtOrientXXlemmaTwo}{\UseVerbatim{HOLprojectAssuranceExecTheoremsRTXXPOSITIONXXexecXXrtOrientXXlemmaTwo}}
+\begin{SaveVerbatim}{HOLprojectAssuranceExecTheoremsRTXXPOSITIONXXexecXXrtOrientXXthm}
+\HOLTokenTurnstile{} \HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{NS} \HOLBoundVar{Out} \HOLBoundVar{M} \HOLBoundVar{Oi} \HOLBoundVar{Os}.
+     \HOLConst{TR} (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os}) (\HOLConst{exec} [\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtOrient})])
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth}
+          ([\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+            \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtOrient}))]\HOLSymConst{::}\HOLFreeVar{ins})
+          \HOLConst{RT_POSITION} \HOLFreeVar{outs})
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth} \HOLFreeVar{ins}
+          (\HOLBoundVar{NS} \HOLConst{RT_POSITION}
+             (\HOLConst{exec} [\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtOrient})]))
+          (\HOLBoundVar{Out} \HOLConst{RT_POSITION}
+             (\HOLConst{exec} [\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtOrient})])\HOLSymConst{::}\HOLFreeVar{outs})) \HOLSymConst{\HOLTokenEquiv{}}
+     \HOLConst{authenticationTest} \HOLConst{authentication}
+       [\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+        \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtOrient}))] \HOLSymConst{\HOLTokenConj{}}
+     \HOLConst{CFGInterpret} (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os})
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth}
+          ([\HOLConst{Name} \HOLConst{SquadLeader} \HOLConst{says}
+            \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtOrient}))]\HOLSymConst{::}\HOLFreeVar{ins})
+          \HOLConst{RT_POSITION} \HOLFreeVar{outs}) \HOLSymConst{\HOLTokenConj{}}
+     (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os}) \HOLConst{satList} [\HOLConst{prop} (\HOLConst{SOME} (\HOLConst{SquadLeaderCOM} \HOLConst{rtOrient}))]
+\end{SaveVerbatim}
+\newcommand{\HOLprojectAssuranceExecTheoremsRTXXPOSITIONXXexecXXrtOrientXXthm}{\UseVerbatim{HOLprojectAssuranceExecTheoremsRTXXPOSITIONXXexecXXrtOrientXXthm}}
+\newcommand{\HOLprojectAssuranceExecTheorems}{
+\HOLThmTag{projectAssuranceExec}{RT_ALERT_exec_complete_lemma1}\HOLprojectAssuranceExecTheoremsRTXXALERTXXexecXXcompleteXXlemmaOne
+\HOLThmTag{projectAssuranceExec}{RT_ALERT_exec_complete_lemma2}\HOLprojectAssuranceExecTheoremsRTXXALERTXXexecXXcompleteXXlemmaTwo
+\HOLThmTag{projectAssuranceExec}{RT_ALERT_exec_complete_thm}\HOLprojectAssuranceExecTheoremsRTXXALERTXXexecXXcompleteXXthm
+\HOLThmTag{projectAssuranceExec}{RT_FORM_exec_rtPosition_lemma1}\HOLprojectAssuranceExecTheoremsRTXXFORMXXexecXXrtPositionXXlemmaOne
+\HOLThmTag{projectAssuranceExec}{RT_FORM_exec_rtPosition_lemma2}\HOLprojectAssuranceExecTheoremsRTXXFORMXXexecXXrtPositionXXlemmaTwo
+\HOLThmTag{projectAssuranceExec}{RT_FORM_exec_rtPosition_thm}\HOLprojectAssuranceExecTheoremsRTXXFORMXXexecXXrtPositionXXthm
+\HOLThmTag{projectAssuranceExec}{RT_ORIENT_exec_rtAlert_lemma1}\HOLprojectAssuranceExecTheoremsRTXXORIENTXXexecXXrtAlertXXlemmaOne
+\HOLThmTag{projectAssuranceExec}{RT_ORIENT_exec_rtAlert_lemma2}\HOLprojectAssuranceExecTheoremsRTXXORIENTXXexecXXrtAlertXXlemmaTwo
+\HOLThmTag{projectAssuranceExec}{RT_ORIENT_exec_rtAlert_thm}\HOLprojectAssuranceExecTheoremsRTXXORIENTXXexecXXrtAlertXXthm
+\HOLThmTag{projectAssuranceExec}{RT_POSITION_exec_rtOrient_lemma1}\HOLprojectAssuranceExecTheoremsRTXXPOSITIONXXexecXXrtOrientXXlemmaOne
+\HOLThmTag{projectAssuranceExec}{RT_POSITION_exec_rtOrient_lemma2}\HOLprojectAssuranceExecTheoremsRTXXPOSITIONXXexecXXrtOrientXXlemmaTwo
+\HOLThmTag{projectAssuranceExec}{RT_POSITION_exec_rtOrient_thm}\HOLprojectAssuranceExecTheoremsRTXXPOSITIONXXexecXXrtOrientXXthm
+}

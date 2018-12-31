@@ -1,0 +1,233 @@
+\newcommand{\HOLprojectAssuranceExecDate}{27 December 2018}
+\newcommand{\HOLprojectAssuranceExecTime}{11:18}
+\begin{SaveVerbatim}{HOLprojectAssuranceExecTheoremsFORMXXexecXXmoveXXlemmaOne}
+\HOLTokenTurnstile{} \HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{M} \HOLBoundVar{Oi} \HOLBoundVar{Os}.
+     \HOLConst{CFGInterpret} (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os})
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth}
+          ([\HOLConst{Name} \HOLConst{PlatoonLeader} \HOLConst{says}
+            \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{move}))]\HOLSymConst{::}\HOLFreeVar{ins}) \HOLConst{FORM}
+          \HOLFreeVar{outs}) \HOLSymConst{\HOLTokenImp{}}
+     (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os}) \HOLConst{satList}
+     \HOLConst{propCommandList}
+       [\HOLConst{Name} \HOLConst{PlatoonLeader} \HOLConst{says}
+        \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{move}))]
+\end{SaveVerbatim}
+\newcommand{\HOLprojectAssuranceExecTheoremsFORMXXexecXXmoveXXlemmaOne}{\UseVerbatim{HOLprojectAssuranceExecTheoremsFORMXXexecXXmoveXXlemmaOne}}
+\begin{SaveVerbatim}{HOLprojectAssuranceExecTheoremsFORMXXexecXXmoveXXlemmaTwo}
+\HOLTokenTurnstile{} \HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{NS} \HOLBoundVar{Out} \HOLBoundVar{M} \HOLBoundVar{Oi} \HOLBoundVar{Os}.
+     \HOLConst{TR} (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os})
+       (\HOLConst{exec}
+          (\HOLConst{inputList}
+             [\HOLConst{Name} \HOLConst{PlatoonLeader} \HOLConst{says}
+              \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{move}))]))
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth}
+          ([\HOLConst{Name} \HOLConst{PlatoonLeader} \HOLConst{says}
+            \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{move}))]\HOLSymConst{::}\HOLFreeVar{ins}) \HOLConst{FORM}
+          \HOLFreeVar{outs})
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth} \HOLFreeVar{ins}
+          (\HOLBoundVar{NS} \HOLConst{FORM}
+             (\HOLConst{exec}
+                (\HOLConst{inputList}
+                   [\HOLConst{Name} \HOLConst{PlatoonLeader} \HOLConst{says}
+                    \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{move}))])))
+          (\HOLBoundVar{Out} \HOLConst{FORM}
+             (\HOLConst{exec}
+                (\HOLConst{inputList}
+                   [\HOLConst{Name} \HOLConst{PlatoonLeader} \HOLConst{says}
+                    \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{move}))]))\HOLSymConst{::}
+               \HOLFreeVar{outs})) \HOLSymConst{\HOLTokenEquiv{}}
+     \HOLConst{authenticationTest} \HOLConst{authentication}
+       [\HOLConst{Name} \HOLConst{PlatoonLeader} \HOLConst{says}
+        \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{move}))] \HOLSymConst{\HOLTokenConj{}}
+     \HOLConst{CFGInterpret} (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os})
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth}
+          ([\HOLConst{Name} \HOLConst{PlatoonLeader} \HOLConst{says}
+            \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{move}))]\HOLSymConst{::}\HOLFreeVar{ins}) \HOLConst{FORM}
+          \HOLFreeVar{outs}) \HOLSymConst{\HOLTokenConj{}}
+     (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os}) \HOLConst{satList}
+     \HOLConst{propCommandList}
+       [\HOLConst{Name} \HOLConst{PlatoonLeader} \HOLConst{says}
+        \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{move}))]
+\end{SaveVerbatim}
+\newcommand{\HOLprojectAssuranceExecTheoremsFORMXXexecXXmoveXXlemmaTwo}{\UseVerbatim{HOLprojectAssuranceExecTheoremsFORMXXexecXXmoveXXlemmaTwo}}
+\begin{SaveVerbatim}{HOLprojectAssuranceExecTheoremsFORMXXexecXXmoveXXthm}
+\HOLTokenTurnstile{} \HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{NS} \HOLBoundVar{Out} \HOLBoundVar{M} \HOLBoundVar{Oi} \HOLBoundVar{Os}.
+     \HOLConst{TR} (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os}) (\HOLConst{exec} [\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{move})])
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth}
+          ([\HOLConst{Name} \HOLConst{PlatoonLeader} \HOLConst{says}
+            \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{move}))]\HOLSymConst{::}\HOLFreeVar{ins}) \HOLConst{FORM}
+          \HOLFreeVar{outs})
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth} \HOLFreeVar{ins}
+          (\HOLBoundVar{NS} \HOLConst{FORM} (\HOLConst{exec} [\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{move})]))
+          (\HOLBoundVar{Out} \HOLConst{FORM} (\HOLConst{exec} [\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{move})])\HOLSymConst{::}
+               \HOLFreeVar{outs})) \HOLSymConst{\HOLTokenEquiv{}}
+     \HOLConst{authenticationTest} \HOLConst{authentication}
+       [\HOLConst{Name} \HOLConst{PlatoonLeader} \HOLConst{says}
+        \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{move}))] \HOLSymConst{\HOLTokenConj{}}
+     \HOLConst{CFGInterpret} (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os})
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth}
+          ([\HOLConst{Name} \HOLConst{PlatoonLeader} \HOLConst{says}
+            \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{move}))]\HOLSymConst{::}\HOLFreeVar{ins}) \HOLConst{FORM}
+          \HOLFreeVar{outs}) \HOLSymConst{\HOLTokenConj{}}
+     (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os}) \HOLConst{satList} [\HOLConst{prop} (\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{move}))]
+\end{SaveVerbatim}
+\newcommand{\HOLprojectAssuranceExecTheoremsFORMXXexecXXmoveXXthm}{\UseVerbatim{HOLprojectAssuranceExecTheoremsFORMXXexecXXmoveXXthm}}
+\begin{SaveVerbatim}{HOLprojectAssuranceExecTheoremsMOVEXXexecXXsecureHaltXXlemmaOne}
+\HOLTokenTurnstile{} \HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{M} \HOLBoundVar{Oi} \HOLBoundVar{Os}.
+     \HOLConst{CFGInterpret} (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os})
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth}
+          ([\HOLConst{Name} \HOLConst{PlatoonLeader} \HOLConst{says}
+            \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{secureHalt}))]\HOLSymConst{::}\HOLFreeVar{ins})
+          \HOLConst{MOVE} \HOLFreeVar{outs}) \HOLSymConst{\HOLTokenImp{}}
+     (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os}) \HOLConst{satList}
+     \HOLConst{propCommandList}
+       [\HOLConst{Name} \HOLConst{PlatoonLeader} \HOLConst{says}
+        \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{secureHalt}))]
+\end{SaveVerbatim}
+\newcommand{\HOLprojectAssuranceExecTheoremsMOVEXXexecXXsecureHaltXXlemmaOne}{\UseVerbatim{HOLprojectAssuranceExecTheoremsMOVEXXexecXXsecureHaltXXlemmaOne}}
+\begin{SaveVerbatim}{HOLprojectAssuranceExecTheoremsMOVEXXexecXXsecureHaltXXlemmaTwo}
+\HOLTokenTurnstile{} \HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{NS} \HOLBoundVar{Out} \HOLBoundVar{M} \HOLBoundVar{Oi} \HOLBoundVar{Os}.
+     \HOLConst{TR} (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os})
+       (\HOLConst{exec}
+          (\HOLConst{inputList}
+             [\HOLConst{Name} \HOLConst{PlatoonLeader} \HOLConst{says}
+              \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{secureHalt}))]))
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth}
+          ([\HOLConst{Name} \HOLConst{PlatoonLeader} \HOLConst{says}
+            \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{secureHalt}))]\HOLSymConst{::}\HOLFreeVar{ins})
+          \HOLConst{MOVE} \HOLFreeVar{outs})
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth} \HOLFreeVar{ins}
+          (\HOLBoundVar{NS} \HOLConst{MOVE}
+             (\HOLConst{exec}
+                (\HOLConst{inputList}
+                   [\HOLConst{Name} \HOLConst{PlatoonLeader} \HOLConst{says}
+                    \HOLConst{prop}
+                      (\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{secureHalt}))])))
+          (\HOLBoundVar{Out} \HOLConst{MOVE}
+             (\HOLConst{exec}
+                (\HOLConst{inputList}
+                   [\HOLConst{Name} \HOLConst{PlatoonLeader} \HOLConst{says}
+                    \HOLConst{prop}
+                      (\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{secureHalt}))]))\HOLSymConst{::}
+               \HOLFreeVar{outs})) \HOLSymConst{\HOLTokenEquiv{}}
+     \HOLConst{authenticationTest} \HOLConst{authentication}
+       [\HOLConst{Name} \HOLConst{PlatoonLeader} \HOLConst{says}
+        \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{secureHalt}))] \HOLSymConst{\HOLTokenConj{}}
+     \HOLConst{CFGInterpret} (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os})
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth}
+          ([\HOLConst{Name} \HOLConst{PlatoonLeader} \HOLConst{says}
+            \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{secureHalt}))]\HOLSymConst{::}\HOLFreeVar{ins})
+          \HOLConst{MOVE} \HOLFreeVar{outs}) \HOLSymConst{\HOLTokenConj{}}
+     (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os}) \HOLConst{satList}
+     \HOLConst{propCommandList}
+       [\HOLConst{Name} \HOLConst{PlatoonLeader} \HOLConst{says}
+        \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{secureHalt}))]
+\end{SaveVerbatim}
+\newcommand{\HOLprojectAssuranceExecTheoremsMOVEXXexecXXsecureHaltXXlemmaTwo}{\UseVerbatim{HOLprojectAssuranceExecTheoremsMOVEXXexecXXsecureHaltXXlemmaTwo}}
+\begin{SaveVerbatim}{HOLprojectAssuranceExecTheoremsMOVEXXexecXXsecureHaltXXthm}
+\HOLTokenTurnstile{} \HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{NS} \HOLBoundVar{Out} \HOLBoundVar{M} \HOLBoundVar{Oi} \HOLBoundVar{Os}.
+     \HOLConst{TR} (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os}) (\HOLConst{exec} [\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{secureHalt})])
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth}
+          ([\HOLConst{Name} \HOLConst{PlatoonLeader} \HOLConst{says}
+            \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{secureHalt}))]\HOLSymConst{::}\HOLFreeVar{ins})
+          \HOLConst{MOVE} \HOLFreeVar{outs})
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth} \HOLFreeVar{ins}
+          (\HOLBoundVar{NS} \HOLConst{MOVE} (\HOLConst{exec} [\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{secureHalt})]))
+          (\HOLBoundVar{Out} \HOLConst{MOVE}
+             (\HOLConst{exec} [\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{secureHalt})])\HOLSymConst{::}
+               \HOLFreeVar{outs})) \HOLSymConst{\HOLTokenEquiv{}}
+     \HOLConst{authenticationTest} \HOLConst{authentication}
+       [\HOLConst{Name} \HOLConst{PlatoonLeader} \HOLConst{says}
+        \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{secureHalt}))] \HOLSymConst{\HOLTokenConj{}}
+     \HOLConst{CFGInterpret} (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os})
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth}
+          ([\HOLConst{Name} \HOLConst{PlatoonLeader} \HOLConst{says}
+            \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{secureHalt}))]\HOLSymConst{::}\HOLFreeVar{ins})
+          \HOLConst{MOVE} \HOLFreeVar{outs}) \HOLSymConst{\HOLTokenConj{}}
+     (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os}) \HOLConst{satList}
+     [\HOLConst{prop} (\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{secureHalt}))]
+\end{SaveVerbatim}
+\newcommand{\HOLprojectAssuranceExecTheoremsMOVEXXexecXXsecureHaltXXthm}{\UseVerbatim{HOLprojectAssuranceExecTheoremsMOVEXXexecXXsecureHaltXXthm}}
+\begin{SaveVerbatim}{HOLprojectAssuranceExecTheoremsMOVEXXTOXXPBXXexecXXformXXlemmaOne}
+\HOLTokenTurnstile{} \HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{M} \HOLBoundVar{Oi} \HOLBoundVar{Os}.
+     \HOLConst{CFGInterpret} (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os})
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth}
+          ([\HOLConst{Name} \HOLConst{PlatoonLeader} \HOLConst{says}
+            \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{form}))]\HOLSymConst{::}\HOLFreeVar{ins})
+          \HOLConst{MOVE_TO_PB} \HOLFreeVar{outs}) \HOLSymConst{\HOLTokenImp{}}
+     (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os}) \HOLConst{satList}
+     \HOLConst{propCommandList}
+       [\HOLConst{Name} \HOLConst{PlatoonLeader} \HOLConst{says}
+        \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{form}))]
+\end{SaveVerbatim}
+\newcommand{\HOLprojectAssuranceExecTheoremsMOVEXXTOXXPBXXexecXXformXXlemmaOne}{\UseVerbatim{HOLprojectAssuranceExecTheoremsMOVEXXTOXXPBXXexecXXformXXlemmaOne}}
+\begin{SaveVerbatim}{HOLprojectAssuranceExecTheoremsMOVEXXTOXXPBXXexecXXformXXlemmaTwo}
+\HOLTokenTurnstile{} \HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{NS} \HOLBoundVar{Out} \HOLBoundVar{M} \HOLBoundVar{Oi} \HOLBoundVar{Os}.
+     \HOLConst{TR} (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os})
+       (\HOLConst{exec}
+          (\HOLConst{inputList}
+             [\HOLConst{Name} \HOLConst{PlatoonLeader} \HOLConst{says}
+              \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{form}))]))
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth}
+          ([\HOLConst{Name} \HOLConst{PlatoonLeader} \HOLConst{says}
+            \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{form}))]\HOLSymConst{::}\HOLFreeVar{ins})
+          \HOLConst{MOVE_TO_PB} \HOLFreeVar{outs})
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth} \HOLFreeVar{ins}
+          (\HOLBoundVar{NS} \HOLConst{MOVE_TO_PB}
+             (\HOLConst{exec}
+                (\HOLConst{inputList}
+                   [\HOLConst{Name} \HOLConst{PlatoonLeader} \HOLConst{says}
+                    \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{form}))])))
+          (\HOLBoundVar{Out} \HOLConst{MOVE_TO_PB}
+             (\HOLConst{exec}
+                (\HOLConst{inputList}
+                   [\HOLConst{Name} \HOLConst{PlatoonLeader} \HOLConst{says}
+                    \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{form}))]))\HOLSymConst{::}
+               \HOLFreeVar{outs})) \HOLSymConst{\HOLTokenEquiv{}}
+     \HOLConst{authenticationTest} \HOLConst{authentication}
+       [\HOLConst{Name} \HOLConst{PlatoonLeader} \HOLConst{says}
+        \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{form}))] \HOLSymConst{\HOLTokenConj{}}
+     \HOLConst{CFGInterpret} (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os})
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth}
+          ([\HOLConst{Name} \HOLConst{PlatoonLeader} \HOLConst{says}
+            \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{form}))]\HOLSymConst{::}\HOLFreeVar{ins})
+          \HOLConst{MOVE_TO_PB} \HOLFreeVar{outs}) \HOLSymConst{\HOLTokenConj{}}
+     (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os}) \HOLConst{satList}
+     \HOLConst{propCommandList}
+       [\HOLConst{Name} \HOLConst{PlatoonLeader} \HOLConst{says}
+        \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{form}))]
+\end{SaveVerbatim}
+\newcommand{\HOLprojectAssuranceExecTheoremsMOVEXXTOXXPBXXexecXXformXXlemmaTwo}{\UseVerbatim{HOLprojectAssuranceExecTheoremsMOVEXXTOXXPBXXexecXXformXXlemmaTwo}}
+\begin{SaveVerbatim}{HOLprojectAssuranceExecTheoremsMOVEXXTOXXPBXXexecXXformXXthm}
+\HOLTokenTurnstile{} \HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{NS} \HOLBoundVar{Out} \HOLBoundVar{M} \HOLBoundVar{Oi} \HOLBoundVar{Os}.
+     \HOLConst{TR} (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os}) (\HOLConst{exec} [\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{form})])
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth}
+          ([\HOLConst{Name} \HOLConst{PlatoonLeader} \HOLConst{says}
+            \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{form}))]\HOLSymConst{::}\HOLFreeVar{ins})
+          \HOLConst{MOVE_TO_PB} \HOLFreeVar{outs})
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth} \HOLFreeVar{ins}
+          (\HOLBoundVar{NS} \HOLConst{MOVE_TO_PB} (\HOLConst{exec} [\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{form})]))
+          (\HOLBoundVar{Out} \HOLConst{MOVE_TO_PB}
+             (\HOLConst{exec} [\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{form})])\HOLSymConst{::}\HOLFreeVar{outs})) \HOLSymConst{\HOLTokenEquiv{}}
+     \HOLConst{authenticationTest} \HOLConst{authentication}
+       [\HOLConst{Name} \HOLConst{PlatoonLeader} \HOLConst{says}
+        \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{form}))] \HOLSymConst{\HOLTokenConj{}}
+     \HOLConst{CFGInterpret} (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os})
+       (\HOLConst{CFG} \HOLConst{authentication} \HOLConst{stateAuth} \HOLConst{globalAuth}
+          ([\HOLConst{Name} \HOLConst{PlatoonLeader} \HOLConst{says}
+            \HOLConst{prop} (\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{form}))]\HOLSymConst{::}\HOLFreeVar{ins})
+          \HOLConst{MOVE_TO_PB} \HOLFreeVar{outs}) \HOLSymConst{\HOLTokenConj{}}
+     (\HOLBoundVar{M}\HOLSymConst{,}\HOLBoundVar{Oi}\HOLSymConst{,}\HOLBoundVar{Os}) \HOLConst{satList} [\HOLConst{prop} (\HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{form}))]
+\end{SaveVerbatim}
+\newcommand{\HOLprojectAssuranceExecTheoremsMOVEXXTOXXPBXXexecXXformXXthm}{\UseVerbatim{HOLprojectAssuranceExecTheoremsMOVEXXTOXXPBXXexecXXformXXthm}}
+\newcommand{\HOLprojectAssuranceExecTheorems}{
+\HOLThmTag{projectAssuranceExec}{FORM_exec_move_lemma1}\HOLprojectAssuranceExecTheoremsFORMXXexecXXmoveXXlemmaOne
+\HOLThmTag{projectAssuranceExec}{FORM_exec_move_lemma2}\HOLprojectAssuranceExecTheoremsFORMXXexecXXmoveXXlemmaTwo
+\HOLThmTag{projectAssuranceExec}{FORM_exec_move_thm}\HOLprojectAssuranceExecTheoremsFORMXXexecXXmoveXXthm
+\HOLThmTag{projectAssuranceExec}{MOVE_exec_secureHalt_lemma1}\HOLprojectAssuranceExecTheoremsMOVEXXexecXXsecureHaltXXlemmaOne
+\HOLThmTag{projectAssuranceExec}{MOVE_exec_secureHalt_lemma2}\HOLprojectAssuranceExecTheoremsMOVEXXexecXXsecureHaltXXlemmaTwo
+\HOLThmTag{projectAssuranceExec}{MOVE_exec_secureHalt_thm}\HOLprojectAssuranceExecTheoremsMOVEXXexecXXsecureHaltXXthm
+\HOLThmTag{projectAssuranceExec}{MOVE_TO_PB_exec_form_lemma1}\HOLprojectAssuranceExecTheoremsMOVEXXTOXXPBXXexecXXformXXlemmaOne
+\HOLThmTag{projectAssuranceExec}{MOVE_TO_PB_exec_form_lemma2}\HOLprojectAssuranceExecTheoremsMOVEXXTOXXPBXXexecXXformXXlemmaTwo
+\HOLThmTag{projectAssuranceExec}{MOVE_TO_PB_exec_form_thm}\HOLprojectAssuranceExecTheoremsMOVEXXTOXXPBXXexecXXformXXthm
+}

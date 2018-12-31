@@ -1,0 +1,57 @@
+\begin{theindex}
+
+  \item \textbf  {projectAssuranceExec Theory}, 18
+    \subitem Theorems, 18
+      \subsubitem CONDUCT_ORP_exec_formST_lemma1, 18
+      \subsubitem CONDUCT_ORP_exec_formST_lemma2, 18
+      \subsubitem CONDUCT_ORP_exec_formST_thm, 19
+      \subsubitem CONTINGENCY_PLAN_exec_moveToORP_lemma1, 20
+      \subsubitem CONTINGENCY_PLAN_exec_moveToORP_lemma2, 20
+      \subsubitem CONTINGENCY_PLAN_exec_moveToORP_thm, 21
+      \subsubitem FORM_ST_exec_returnToUnit_lemma1, 21
+      \subsubitem FORM_ST_exec_returnToUnit_lemma2, 21
+      \subsubitem FORM_ST_exec_returnToUnit_thm, 22
+      \subsubitem MOVE_TO_ORP_exec_conductORP_lemma1, 23
+      \subsubitem MOVE_TO_ORP_exec_conductORP_lemma2, 23
+      \subsubitem MOVE_TO_ORP_exec_conductORP_thm, 24
+      \subsubitem ORP_RECON_exec_contingencyPlan_lemma1, 24
+      \subsubitem ORP_RECON_exec_contingencyPlan_lemma2, 24
+      \subsubitem ORP_RECON_exec_contingencyPlan_thm, 25
+      \subsubitem RETURN_TO_UNIT_exec_complete_lemma1, 26
+      \subsubitem RETURN_TO_UNIT_exec_complete_lemma2, 26
+      \subsubitem RETURN_TO_UNIT_exec_complete_thm, 27
+  \item \textbf  {projectSecurity Theory}, 15
+    \subitem Definitions, 15
+      \subsubitem globalAuth_def, 15
+      \subsubitem stateAuth_def, 15
+    \subitem Theorems, 16
+      \subsubitem authentication_def, 16
+      \subsubitem authentication_ind, 17
+  \item \textbf  {projectSM Theory}, 12
+    \subitem Theorems, 12
+      \subsubitem NOut_def, 13
+      \subsubitem NOut_ind, 13
+      \subsubitem NS_def, 14
+      \subsubitem NS_ind, 14
+  \item \textbf  {projectTypes Theory}, 3
+    \subitem Datatypes, 3
+    \subitem Theorems, 3
+      \subsubitem commands_distinct_clauses, 3
+      \subsubitem commands_one_one, 3
+      \subsubitem omniCom_distinct_clauses, 3
+      \subsubitem output_distinct_clauses, 3
+      \subsubitem platoonLeaderCom_distinct_clauses, 4
+      \subsubitem principal_distinct_clauses, 4
+      \subsubitem state_distinct_clauses, 4
+  \item \textbf  {projectUtilities Theory}, 4
+    \subitem Theorems, 4
+      \subsubitem getOmniCOM_def, 5
+      \subsubitem getOmniCOM_ind, 5
+      \subsubitem getOmniCOMx_def, 5
+      \subsubitem getOmniCOMx_ind, 7
+      \subsubitem getPlatoonLeaderCOM_def, 8
+      \subsubitem getPlatoonLeaderCOM_ind, 8
+      \subsubitem getPlatoonLeaderCOMx_def, 8
+      \subsubitem getPlatoonLeaderCOMx_ind, 11
+
+\end{theindex}

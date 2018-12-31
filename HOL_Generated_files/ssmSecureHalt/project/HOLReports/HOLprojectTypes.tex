@@ -1,0 +1,87 @@
+\newcommand{\HOLprojectTypesDate}{27 December 2018}
+\newcommand{\HOLprojectTypesTime}{12:03}
+\begin{SaveVerbatim}{HOLprojectTypesDatatypescommands}
+\HOLFreeVar{commands} = \HOLConst{PlatoonLeaderCOM} \HOLTyOp{platoonLeaderCom} \HOLTokenBar{} \HOLConst{OmniCOM} \HOLTyOp{omniCom}
+\end{SaveVerbatim}
+\newcommand{\HOLprojectTypesDatatypescommands}{\UseVerbatim{HOLprojectTypesDatatypescommands}}
+\begin{SaveVerbatim}{HOLprojectTypesDatatypesomniCom}
+\HOLFreeVar{omniCom} = \HOLConst{none} \HOLTokenBar{} \HOLConst{omniNA}
+\end{SaveVerbatim}
+\newcommand{\HOLprojectTypesDatatypesomniCom}{\UseVerbatim{HOLprojectTypesDatatypesomniCom}}
+\begin{SaveVerbatim}{HOLprojectTypesDatatypesoutput}
+\HOLFreeVar{output} = \HOLConst{Secure_halt} \HOLTokenBar{} \HOLConst{Secure} \HOLTokenBar{} \HOLConst{OrpRecon} \HOLTokenBar{} \HOLConst{Withdraw} \HOLTokenBar{} \HOLConst{Complete}
+       \HOLTokenBar{} \HOLConst{NoActionTaken} \HOLTokenBar{} \HOLConst{UnAuthenticated} \HOLTokenBar{} \HOLConst{UnAuthorized}
+\end{SaveVerbatim}
+\newcommand{\HOLprojectTypesDatatypesoutput}{\UseVerbatim{HOLprojectTypesDatatypesoutput}}
+\begin{SaveVerbatim}{HOLprojectTypesDatatypesplatoonLeaderCom}
+\HOLFreeVar{platoonLeaderCom} = \HOLConst{secure} \HOLTokenBar{} \HOLConst{orpRecon} \HOLTokenBar{} \HOLConst{withdraw} \HOLTokenBar{} \HOLConst{complete}
+\end{SaveVerbatim}
+\newcommand{\HOLprojectTypesDatatypesplatoonLeaderCom}{\UseVerbatim{HOLprojectTypesDatatypesplatoonLeaderCom}}
+\begin{SaveVerbatim}{HOLprojectTypesDatatypesprincipal}
+\HOLFreeVar{principal} = \HOLConst{PlatoonLeader} \HOLTokenBar{} \HOLConst{Omni}
+\end{SaveVerbatim}
+\newcommand{\HOLprojectTypesDatatypesprincipal}{\UseVerbatim{HOLprojectTypesDatatypesprincipal}}
+\begin{SaveVerbatim}{HOLprojectTypesDatatypesstate}
+\HOLFreeVar{state} = \HOLConst{SECURE_HALT} \HOLTokenBar{} \HOLConst{SECURE} \HOLTokenBar{} \HOLConst{ORP_RECON} \HOLTokenBar{} \HOLConst{WITHDRAW} \HOLTokenBar{} \HOLConst{COMPLETE}
+\end{SaveVerbatim}
+\newcommand{\HOLprojectTypesDatatypesstate}{\UseVerbatim{HOLprojectTypesDatatypesstate}}
+\newcommand{\HOLprojectTypesDatatypes}{
+\HOLprojectTypesDatatypescommands\HOLprojectTypesDatatypesomniCom\HOLprojectTypesDatatypesoutput\HOLprojectTypesDatatypesplatoonLeaderCom\HOLprojectTypesDatatypesprincipal\HOLprojectTypesDatatypesstate}
+\begin{SaveVerbatim}{HOLprojectTypesTheoremscommandsXXdistinctXXclauses}
+\HOLTokenTurnstile{} \HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{a\sp{\prime}} \HOLBoundVar{a}. \HOLConst{PlatoonLeaderCOM} \HOLBoundVar{a} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{OmniCOM} \HOLBoundVar{a\sp{\prime}}
+\end{SaveVerbatim}
+\newcommand{\HOLprojectTypesTheoremscommandsXXdistinctXXclauses}{\UseVerbatim{HOLprojectTypesTheoremscommandsXXdistinctXXclauses}}
+\begin{SaveVerbatim}{HOLprojectTypesTheoremscommandsXXoneXXone}
+\HOLTokenTurnstile{} (\HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{a} \HOLBoundVar{a\sp{\prime}}.
+      (\HOLConst{PlatoonLeaderCOM} \HOLBoundVar{a} \HOLSymConst{=} \HOLConst{PlatoonLeaderCOM} \HOLBoundVar{a\sp{\prime}}) \HOLSymConst{\HOLTokenEquiv{}} (\HOLBoundVar{a} \HOLSymConst{=} \HOLBoundVar{a\sp{\prime}})) \HOLSymConst{\HOLTokenConj{}}
+   \HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{a} \HOLBoundVar{a\sp{\prime}}. (\HOLConst{OmniCOM} \HOLBoundVar{a} \HOLSymConst{=} \HOLConst{OmniCOM} \HOLBoundVar{a\sp{\prime}}) \HOLSymConst{\HOLTokenEquiv{}} (\HOLBoundVar{a} \HOLSymConst{=} \HOLBoundVar{a\sp{\prime}})
+\end{SaveVerbatim}
+\newcommand{\HOLprojectTypesTheoremscommandsXXoneXXone}{\UseVerbatim{HOLprojectTypesTheoremscommandsXXoneXXone}}
+\begin{SaveVerbatim}{HOLprojectTypesTheoremsomniComXXdistinctXXclauses}
+\HOLTokenTurnstile{} \HOLConst{none} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{omniNA}
+\end{SaveVerbatim}
+\newcommand{\HOLprojectTypesTheoremsomniComXXdistinctXXclauses}{\UseVerbatim{HOLprojectTypesTheoremsomniComXXdistinctXXclauses}}
+\begin{SaveVerbatim}{HOLprojectTypesTheoremsoutputXXdistinctXXclauses}
+\HOLTokenTurnstile{} \HOLConst{Secure_halt} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{Secure} \HOLSymConst{\HOLTokenConj{}} \HOLConst{Secure_halt} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{OrpRecon} \HOLSymConst{\HOLTokenConj{}}
+   \HOLConst{Secure_halt} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{Withdraw} \HOLSymConst{\HOLTokenConj{}} \HOLConst{Secure_halt} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{Complete} \HOLSymConst{\HOLTokenConj{}}
+   \HOLConst{Secure_halt} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{NoActionTaken} \HOLSymConst{\HOLTokenConj{}} \HOLConst{Secure_halt} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{UnAuthenticated} \HOLSymConst{\HOLTokenConj{}}
+   \HOLConst{Secure_halt} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{UnAuthorized} \HOLSymConst{\HOLTokenConj{}} \HOLConst{Secure} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{OrpRecon} \HOLSymConst{\HOLTokenConj{}}
+   \HOLConst{Secure} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{Withdraw} \HOLSymConst{\HOLTokenConj{}} \HOLConst{Secure} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{Complete} \HOLSymConst{\HOLTokenConj{}}
+   \HOLConst{Secure} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{NoActionTaken} \HOLSymConst{\HOLTokenConj{}} \HOLConst{Secure} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{UnAuthenticated} \HOLSymConst{\HOLTokenConj{}}
+   \HOLConst{Secure} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{UnAuthorized} \HOLSymConst{\HOLTokenConj{}} \HOLConst{OrpRecon} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{Withdraw} \HOLSymConst{\HOLTokenConj{}}
+   \HOLConst{OrpRecon} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{Complete} \HOLSymConst{\HOLTokenConj{}} \HOLConst{OrpRecon} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{NoActionTaken} \HOLSymConst{\HOLTokenConj{}}
+   \HOLConst{OrpRecon} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{UnAuthenticated} \HOLSymConst{\HOLTokenConj{}} \HOLConst{OrpRecon} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{UnAuthorized} \HOLSymConst{\HOLTokenConj{}}
+   \HOLConst{Withdraw} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{Complete} \HOLSymConst{\HOLTokenConj{}} \HOLConst{Withdraw} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{NoActionTaken} \HOLSymConst{\HOLTokenConj{}}
+   \HOLConst{Withdraw} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{UnAuthenticated} \HOLSymConst{\HOLTokenConj{}} \HOLConst{Withdraw} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{UnAuthorized} \HOLSymConst{\HOLTokenConj{}}
+   \HOLConst{Complete} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{NoActionTaken} \HOLSymConst{\HOLTokenConj{}} \HOLConst{Complete} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{UnAuthenticated} \HOLSymConst{\HOLTokenConj{}}
+   \HOLConst{Complete} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{UnAuthorized} \HOLSymConst{\HOLTokenConj{}} \HOLConst{NoActionTaken} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{UnAuthenticated} \HOLSymConst{\HOLTokenConj{}}
+   \HOLConst{NoActionTaken} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{UnAuthorized} \HOLSymConst{\HOLTokenConj{}} \HOLConst{UnAuthenticated} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{UnAuthorized}
+\end{SaveVerbatim}
+\newcommand{\HOLprojectTypesTheoremsoutputXXdistinctXXclauses}{\UseVerbatim{HOLprojectTypesTheoremsoutputXXdistinctXXclauses}}
+\begin{SaveVerbatim}{HOLprojectTypesTheoremsplatoonLeaderComXXdistinctXXclauses}
+\HOLTokenTurnstile{} \HOLConst{secure} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{orpRecon} \HOLSymConst{\HOLTokenConj{}} \HOLConst{secure} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{withdraw} \HOLSymConst{\HOLTokenConj{}} \HOLConst{secure} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{complete} \HOLSymConst{\HOLTokenConj{}}
+   \HOLConst{orpRecon} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{withdraw} \HOLSymConst{\HOLTokenConj{}} \HOLConst{orpRecon} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{complete} \HOLSymConst{\HOLTokenConj{}}
+   \HOLConst{withdraw} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{complete}
+\end{SaveVerbatim}
+\newcommand{\HOLprojectTypesTheoremsplatoonLeaderComXXdistinctXXclauses}{\UseVerbatim{HOLprojectTypesTheoremsplatoonLeaderComXXdistinctXXclauses}}
+\begin{SaveVerbatim}{HOLprojectTypesTheoremsprincipalXXdistinctXXclauses}
+\HOLTokenTurnstile{} \HOLConst{PlatoonLeader} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{Omni}
+\end{SaveVerbatim}
+\newcommand{\HOLprojectTypesTheoremsprincipalXXdistinctXXclauses}{\UseVerbatim{HOLprojectTypesTheoremsprincipalXXdistinctXXclauses}}
+\begin{SaveVerbatim}{HOLprojectTypesTheoremsstateXXdistinctXXclauses}
+\HOLTokenTurnstile{} \HOLConst{SECURE_HALT} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{SECURE} \HOLSymConst{\HOLTokenConj{}} \HOLConst{SECURE_HALT} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{ORP_RECON} \HOLSymConst{\HOLTokenConj{}}
+   \HOLConst{SECURE_HALT} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{WITHDRAW} \HOLSymConst{\HOLTokenConj{}} \HOLConst{SECURE_HALT} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{COMPLETE} \HOLSymConst{\HOLTokenConj{}}
+   \HOLConst{SECURE} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{ORP_RECON} \HOLSymConst{\HOLTokenConj{}} \HOLConst{SECURE} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{WITHDRAW} \HOLSymConst{\HOLTokenConj{}} \HOLConst{SECURE} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{COMPLETE} \HOLSymConst{\HOLTokenConj{}}
+   \HOLConst{ORP_RECON} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{WITHDRAW} \HOLSymConst{\HOLTokenConj{}} \HOLConst{ORP_RECON} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{COMPLETE} \HOLSymConst{\HOLTokenConj{}}
+   \HOLConst{WITHDRAW} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{COMPLETE}
+\end{SaveVerbatim}
+\newcommand{\HOLprojectTypesTheoremsstateXXdistinctXXclauses}{\UseVerbatim{HOLprojectTypesTheoremsstateXXdistinctXXclauses}}
+\newcommand{\HOLprojectTypesTheorems}{
+\HOLThmTag{projectTypes}{commands_distinct_clauses}\HOLprojectTypesTheoremscommandsXXdistinctXXclauses
+\HOLThmTag{projectTypes}{commands_one_one}\HOLprojectTypesTheoremscommandsXXoneXXone
+\HOLThmTag{projectTypes}{omniCom_distinct_clauses}\HOLprojectTypesTheoremsomniComXXdistinctXXclauses
+\HOLThmTag{projectTypes}{output_distinct_clauses}\HOLprojectTypesTheoremsoutputXXdistinctXXclauses
+\HOLThmTag{projectTypes}{platoonLeaderCom_distinct_clauses}\HOLprojectTypesTheoremsplatoonLeaderComXXdistinctXXclauses
+\HOLThmTag{projectTypes}{principal_distinct_clauses}\HOLprojectTypesTheoremsprincipalXXdistinctXXclauses
+\HOLThmTag{projectTypes}{state_distinct_clauses}\HOLprojectTypesTheoremsstateXXdistinctXXclauses
+}

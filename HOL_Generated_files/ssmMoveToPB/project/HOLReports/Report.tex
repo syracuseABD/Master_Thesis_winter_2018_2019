@@ -1,0 +1,123 @@
+\documentclass[11pt, twoside]{article}
+\usepackage{holtex}
+
+\makeindex
+
+\begin{document}
+
+\input{HOLprojectTypes}
+\input{HOLprojectUtilities}
+\input{HOLprojectSM}
+\input{HOLprojectSecurity}
+\input{HOLprojectAssuranceExec}
+
+\tableofcontents
+\cleardoublepage
+\HOLpagestyle
+
+% ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+\section{projectTypes Theory}
+\index{projectTypes Theory@\textbf  {projectTypes Theory}}
+\begin{flushleft}
+\textbf{Built:} \HOLprojectTypesDate \\[2pt]
+\textbf{Parent Theories:} indexedLists, patternMatches
+\end{flushleft}
+% ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+\subsection{Datatypes}
+\index{projectTypes Theory@\textbf  {projectTypes Theory}!Datatypes}
+% .....................................
+
+\HOLprojectTypesDatatypes
+
+% No definitions
+
+\subsection{Theorems}
+\index{projectTypes Theory@\textbf  {projectTypes Theory}!Theorems}
+% .....................................
+
+\HOLprojectTypesTheorems
+
+% ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+\section{projectUtilities Theory}
+\index{projectUtilities Theory@\textbf  {projectUtilities Theory}}
+\begin{flushleft}
+\textbf{Built:} \HOLprojectUtilitiesDate \\[2pt]
+\textbf{Parent Theories:} projectTypes, satList
+\end{flushleft}
+% ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+% No datatypes
+
+% No definitions
+
+\subsection{Theorems}
+\index{projectUtilities Theory@\textbf  {projectUtilities Theory}!Theorems}
+% .....................................
+
+\HOLprojectUtilitiesTheorems
+
+% ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+\section{projectSM Theory}
+\index{projectSM Theory@\textbf  {projectSM Theory}}
+\begin{flushleft}
+\textbf{Built:} \HOLprojectSMDate \\[2pt]
+\textbf{Parent Theories:} projectUtilities, ssm
+\end{flushleft}
+% ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+% No datatypes
+
+% No definitions
+
+\subsection{Theorems}
+\index{projectSM Theory@\textbf  {projectSM Theory}!Theorems}
+% .....................................
+
+\HOLprojectSMTheorems
+
+% ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+\section{projectSecurity Theory}
+\index{projectSecurity Theory@\textbf  {projectSecurity Theory}}
+\begin{flushleft}
+\textbf{Built:} \HOLprojectSecurityDate \\[2pt]
+\textbf{Parent Theories:} projectUtilities, ssm
+\end{flushleft}
+% ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+% No datatypes
+
+\subsection{Definitions}
+\index{projectSecurity Theory@\textbf  {projectSecurity Theory}!Definitions}
+% .....................................
+
+\HOLprojectSecurityDefinitions
+
+\subsection{Theorems}
+\index{projectSecurity Theory@\textbf  {projectSecurity Theory}!Theorems}
+% .....................................
+
+\HOLprojectSecurityTheorems
+
+% ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+\section{projectAssuranceExec Theory}
+\index{projectAssuranceExec Theory@\textbf  {projectAssuranceExec Theory}}
+\begin{flushleft}
+\textbf{Built:} \HOLprojectAssuranceExecDate \\[2pt]
+\textbf{Parent Theories:} projectSecurity
+\end{flushleft}
+% ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+% No datatypes
+
+% No definitions
+
+\subsection{Theorems}
+\index{projectAssuranceExec Theory@\textbf  {projectAssuranceExec Theory}!Theorems}
+% .....................................
+
+\HOLprojectAssuranceExecTheorems
+
+\HOLindex
+
+\end{document}

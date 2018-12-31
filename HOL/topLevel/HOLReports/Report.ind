@@ -1,0 +1,43 @@
+\begin{theindex}
+
+  \item \textbf  {PBIntegratedDef Theory}, 11
+    \subitem Definitions, 11
+      \subsubitem secAuthorization_def, 11
+      \subsubitem secContext_def, 11
+      \subsubitem secHelper_def, 12
+    \subitem Theorems, 12
+      \subsubitem getOmniCommand_def, 12
+      \subsubitem getOmniCommand_ind, 15
+      \subsubitem getPlCom_def, 16
+      \subsubitem getPlCom_ind, 16
+  \item \textbf  {PBTypeIntegrated Theory}, 3
+    \subitem Datatypes, 3
+    \subitem Theorems, 3
+      \subsubitem omniCommand_distinct_clauses, 3
+      \subsubitem plCommand_distinct_clauses, 3
+      \subsubitem slCommand_distinct_clauses, 4
+      \subsubitem slCommand_one_one, 4
+      \subsubitem slOutput_distinct_clauses, 4
+      \subsubitem slState_distinct_clauses, 4
+      \subsubitem stateRole_distinct_clauses, 4
+
+  \indexspace
+
+  \item \textbf  {ssmPBIntegrated Theory}, 4
+    \subitem Theorems, 5
+      \subsubitem inputOK_cmd_reject_lemma, 5
+      \subsubitem inputOK_def, 5
+      \subsubitem inputOK_ind, 5
+      \subsubitem PBNS_def, 6
+      \subsubitem PBNS_ind, 6
+      \subsubitem PBOut_def, 7
+      \subsubitem PBOut_ind, 7
+      \subsubitem PlatoonLeader_Omni_notDiscard_slCommand_thm, 7
+      \subsubitem PlatoonLeader_PLAN_PB_exec_justified_lemma, 7
+      \subsubitem PlatoonLeader_PLAN_PB_exec_justified_thm, 8
+      \subsubitem PlatoonLeader_PLAN_PB_exec_lemma, 9
+      \subsubitem PlatoonLeader_PLAN_PB_trap_justified_lemma, 9
+      \subsubitem PlatoonLeader_PLAN_PB_trap_justified_thm, 10
+      \subsubitem PlatoonLeader_PLAN_PB_trap_lemma, 11
+
+\end{theindex}

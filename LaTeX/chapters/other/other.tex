@@ -1,0 +1,33 @@
+%other theories
+
+\documentclass[../../main/main.tex]{subfiles}
+
+
+\begin{document}
+\chapter{Non-implemented modules}\label{chp:other}
+The previous chapter discusses the implementation of several patrol base operations implementations in \glsentryshort{hol}.  But, there are numerous ways to describe the patrol base operations.  This chapter briefly discusses ideas that are not implemented in this project.
+
+\section{Authentication \& Roles}
+This master thesis discussed authentication as a visual confirmation among the soldiers. For example, most soldiers in a platoon know who their platoon leader is and do not require a password.  But, there are scenarios where this is not true.   In some cases, more stringent authentication is warranted.  Such authentication may include the use of identification cards, password, biometric, implanted computer chips.  The parametrizable secure state machine model used in this master thesis is also implemented as a crypto version.  This version enforces the access-control logic using more stringent checks on authentication.  
+
+This master thesis also focuses on authentication and verification of roles.  For example, the PlatoonLeader and PlatoonSergeant issue commands.  But, there is an alternative representation that considers soldiers acting in roles.  For example, G.I. Jane acting in the role of Platoon Leader becomes the authenticated and authorized principal.  Just as there is a parametrizable secure state machine model for crypto, there is one for principals acting in roles.  
+
+Both crypto and role versions of the parametrizable secure state machine add another level of complexity and flexibility to the model of the patrol base operations.  They are not implemented in this master thesis because the used model seemed most relevant.  Additionally, there were time constraints on this project.  However, these versions of the ssms have been demonstrated in the "Assured Foundations" course at Syracuse University.  
+
+
+\section{Soldier, Squad, and Platoon Theories}
+The patrol base operations model discussed in the previous chapters described transitions among phases of the operations.  Additional models consider modules of soldiers, squads, and platoons.  These are not implemented because of time constraints.  
+
+The soldier module would describe a soldier datatype.  This would have various values such as name, ID, weapons, health, water, battleReadiness, assignment, etc.   This could then proves various properties of a soldier.  For example,  \textit{SoldiierGIJane  says battleReady}, then the policy may state that
+
+
+ \[ \text{\textit{soldierHealthy andf }} \] 
+  \[ \text{\textit{weaponsReady andf }} \] 
+ \[ \text{\textit{waterReady andf }} \] 
+\[ \text{\textit{SoldierGIJane controls battleReady }} \]
+
+From this, the \glsentryshort{acl} could prove that the soldier is battle ready if and only if the soldier is healthy and has her weapons and water.  Similar modules could describe properties of a squad and platoon.  These could be described with a secure state machine.  However, they are simple enough to be described without it.
+
+
+
+\end{document}

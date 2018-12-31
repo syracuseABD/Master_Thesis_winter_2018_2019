@@ -1,0 +1,84 @@
+\newcommand{\HOLprojectSMDate}{27 December 2018}
+\newcommand{\HOLprojectSMTime}{13:07}
+\begin{SaveVerbatim}{HOLprojectSMTheoremsNOutXXdef}
+\HOLTokenTurnstile{} (\HOLConst{NOut} \HOLConst{CONDUCT_PB} (\HOLConst{exec} \HOLFreeVar{x}) \HOLSymConst{=}
+    \HOLKeyword{if}
+      \HOLConst{getPlatoonLeaderCOM} \HOLFreeVar{x} \HOLSymConst{=} \HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{secure})
+    \HOLKeyword{then}
+      \HOLConst{Secure}
+    \HOLKeyword{else} \HOLConst{NoActionTaken}) \HOLSymConst{\HOLTokenConj{}}
+   (\HOLConst{NOut} \HOLConst{SECURE} (\HOLConst{exec} \HOLFreeVar{x}) \HOLSymConst{=}
+    \HOLKeyword{if}
+      \HOLConst{getPlatoonSergeantCOM} \HOLFreeVar{x} \HOLSymConst{=}
+      \HOLConst{SOME} (\HOLConst{PlatoonSergeantCOM} \HOLConst{actionsIn})
+    \HOLKeyword{then}
+      \HOLConst{ActionsIn}
+    \HOLKeyword{else} \HOLConst{NoActionTaken}) \HOLSymConst{\HOLTokenConj{}}
+   (\HOLConst{NOut} \HOLConst{ACTIONS_IN} (\HOLConst{exec} \HOLFreeVar{x}) \HOLSymConst{=}
+    \HOLKeyword{if}
+      \HOLConst{getPlatoonLeaderCOM} \HOLFreeVar{x} \HOLSymConst{=} \HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{withdraw})
+    \HOLKeyword{then}
+      \HOLConst{Withdraw}
+    \HOLKeyword{else} \HOLConst{NoActionTaken}) \HOLSymConst{\HOLTokenConj{}}
+   (\HOLConst{NOut} \HOLConst{WITHDRAW} (\HOLConst{exec} \HOLFreeVar{x}) \HOLSymConst{=}
+    \HOLKeyword{if}
+      \HOLConst{getPlatoonLeaderCOM} \HOLFreeVar{x} \HOLSymConst{=} \HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{complete})
+    \HOLKeyword{then}
+      \HOLConst{Complete}
+    \HOLKeyword{else} \HOLConst{NoActionTaken}) \HOLSymConst{\HOLTokenConj{}} (\HOLConst{NOut} \HOLFreeVar{s} (\HOLConst{trap} \HOLFreeVar{v\sb{\mathrm{0}}}) \HOLSymConst{=} \HOLConst{UnAuthorized}) \HOLSymConst{\HOLTokenConj{}}
+   (\HOLConst{NOut} \HOLFreeVar{s} (\HOLConst{discard} \HOLFreeVar{v\sb{\mathrm{1}}}) \HOLSymConst{=} \HOLConst{UnAuthenticated})
+\end{SaveVerbatim}
+\newcommand{\HOLprojectSMTheoremsNOutXXdef}{\UseVerbatim{HOLprojectSMTheoremsNOutXXdef}}
+\begin{SaveVerbatim}{HOLprojectSMTheoremsNOutXXind}
+\HOLTokenTurnstile{} \HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{P}.
+     (\HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{x}. \HOLBoundVar{P} \HOLConst{CONDUCT_PB} (\HOLConst{exec} \HOLBoundVar{x})) \HOLSymConst{\HOLTokenConj{}} (\HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{x}. \HOLBoundVar{P} \HOLConst{SECURE} (\HOLConst{exec} \HOLBoundVar{x})) \HOLSymConst{\HOLTokenConj{}}
+     (\HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{x}. \HOLBoundVar{P} \HOLConst{ACTIONS_IN} (\HOLConst{exec} \HOLBoundVar{x})) \HOLSymConst{\HOLTokenConj{}} (\HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{x}. \HOLBoundVar{P} \HOLConst{WITHDRAW} (\HOLConst{exec} \HOLBoundVar{x})) \HOLSymConst{\HOLTokenConj{}}
+     (\HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{s} \HOLBoundVar{v\sb{\mathrm{0}}}. \HOLBoundVar{P} \HOLBoundVar{s} (\HOLConst{trap} \HOLBoundVar{v\sb{\mathrm{0}}})) \HOLSymConst{\HOLTokenConj{}} (\HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{s} \HOLBoundVar{v\sb{\mathrm{1}}}. \HOLBoundVar{P} \HOLBoundVar{s} (\HOLConst{discard} \HOLBoundVar{v\sb{\mathrm{1}}})) \HOLSymConst{\HOLTokenConj{}}
+     (\HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{v\sb{\mathrm{6}}}. \HOLBoundVar{P} \HOLConst{COMPLETE} (\HOLConst{exec} \HOLBoundVar{v\sb{\mathrm{6}}})) \HOLSymConst{\HOLTokenImp{}}
+     \HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{v} \HOLBoundVar{v\sb{\mathrm{1}}}. \HOLBoundVar{P} \HOLBoundVar{v} \HOLBoundVar{v\sb{\mathrm{1}}}
+\end{SaveVerbatim}
+\newcommand{\HOLprojectSMTheoremsNOutXXind}{\UseVerbatim{HOLprojectSMTheoremsNOutXXind}}
+\begin{SaveVerbatim}{HOLprojectSMTheoremsNSXXdef}
+\HOLTokenTurnstile{} (\HOLConst{NS} \HOLConst{CONDUCT_PB} (\HOLConst{exec} \HOLFreeVar{x}) \HOLSymConst{=}
+    \HOLKeyword{if}
+      \HOLConst{getPlatoonLeaderCOM} \HOLFreeVar{x} \HOLSymConst{=} \HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{secure})
+    \HOLKeyword{then}
+      \HOLConst{SECURE}
+    \HOLKeyword{else} \HOLConst{CONDUCT_PB}) \HOLSymConst{\HOLTokenConj{}}
+   (\HOLConst{NS} \HOLConst{SECURE} (\HOLConst{exec} \HOLFreeVar{x}) \HOLSymConst{=}
+    \HOLKeyword{if}
+      \HOLConst{getPlatoonSergeantCOM} \HOLFreeVar{x} \HOLSymConst{=}
+      \HOLConst{SOME} (\HOLConst{PlatoonSergeantCOM} \HOLConst{actionsIn})
+    \HOLKeyword{then}
+      \HOLConst{ACTIONS_IN}
+    \HOLKeyword{else} \HOLConst{SECURE}) \HOLSymConst{\HOLTokenConj{}}
+   (\HOLConst{NS} \HOLConst{ACTIONS_IN} (\HOLConst{exec} \HOLFreeVar{x}) \HOLSymConst{=}
+    \HOLKeyword{if}
+      \HOLConst{getPlatoonLeaderCOM} \HOLFreeVar{x} \HOLSymConst{=} \HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{withdraw})
+    \HOLKeyword{then}
+      \HOLConst{WITHDRAW}
+    \HOLKeyword{else} \HOLConst{ACTIONS_IN}) \HOLSymConst{\HOLTokenConj{}}
+   (\HOLConst{NS} \HOLConst{WITHDRAW} (\HOLConst{exec} \HOLFreeVar{x}) \HOLSymConst{=}
+    \HOLKeyword{if}
+      \HOLConst{getPlatoonLeaderCOM} \HOLFreeVar{x} \HOLSymConst{=} \HOLConst{SOME} (\HOLConst{PlatoonLeaderCOM} \HOLConst{complete})
+    \HOLKeyword{then}
+      \HOLConst{COMPLETE}
+    \HOLKeyword{else} \HOLConst{WITHDRAW}) \HOLSymConst{\HOLTokenConj{}} (\HOLConst{NS} \HOLFreeVar{s} (\HOLConst{trap} \HOLFreeVar{v\sb{\mathrm{0}}}) \HOLSymConst{=} \HOLFreeVar{s}) \HOLSymConst{\HOLTokenConj{}}
+   (\HOLConst{NS} \HOLFreeVar{s} (\HOLConst{discard} \HOLFreeVar{v\sb{\mathrm{1}}}) \HOLSymConst{=} \HOLFreeVar{s})
+\end{SaveVerbatim}
+\newcommand{\HOLprojectSMTheoremsNSXXdef}{\UseVerbatim{HOLprojectSMTheoremsNSXXdef}}
+\begin{SaveVerbatim}{HOLprojectSMTheoremsNSXXind}
+\HOLTokenTurnstile{} \HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{P}.
+     (\HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{x}. \HOLBoundVar{P} \HOLConst{CONDUCT_PB} (\HOLConst{exec} \HOLBoundVar{x})) \HOLSymConst{\HOLTokenConj{}} (\HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{x}. \HOLBoundVar{P} \HOLConst{SECURE} (\HOLConst{exec} \HOLBoundVar{x})) \HOLSymConst{\HOLTokenConj{}}
+     (\HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{x}. \HOLBoundVar{P} \HOLConst{ACTIONS_IN} (\HOLConst{exec} \HOLBoundVar{x})) \HOLSymConst{\HOLTokenConj{}} (\HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{x}. \HOLBoundVar{P} \HOLConst{WITHDRAW} (\HOLConst{exec} \HOLBoundVar{x})) \HOLSymConst{\HOLTokenConj{}}
+     (\HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{s} \HOLBoundVar{v\sb{\mathrm{0}}}. \HOLBoundVar{P} \HOLBoundVar{s} (\HOLConst{trap} \HOLBoundVar{v\sb{\mathrm{0}}})) \HOLSymConst{\HOLTokenConj{}} (\HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{s} \HOLBoundVar{v\sb{\mathrm{1}}}. \HOLBoundVar{P} \HOLBoundVar{s} (\HOLConst{discard} \HOLBoundVar{v\sb{\mathrm{1}}})) \HOLSymConst{\HOLTokenConj{}}
+     (\HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{v\sb{\mathrm{6}}}. \HOLBoundVar{P} \HOLConst{COMPLETE} (\HOLConst{exec} \HOLBoundVar{v\sb{\mathrm{6}}})) \HOLSymConst{\HOLTokenImp{}}
+     \HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{v} \HOLBoundVar{v\sb{\mathrm{1}}}. \HOLBoundVar{P} \HOLBoundVar{v} \HOLBoundVar{v\sb{\mathrm{1}}}
+\end{SaveVerbatim}
+\newcommand{\HOLprojectSMTheoremsNSXXind}{\UseVerbatim{HOLprojectSMTheoremsNSXXind}}
+\newcommand{\HOLprojectSMTheorems}{
+\HOLThmTag{projectSM}{NOut_def}\HOLprojectSMTheoremsNOutXXdef
+\HOLThmTag{projectSM}{NOut_ind}\HOLprojectSMTheoremsNOutXXind
+\HOLThmTag{projectSM}{NS_def}\HOLprojectSMTheoremsNSXXdef
+\HOLThmTag{projectSM}{NS_ind}\HOLprojectSMTheoremsNSXXind
+}

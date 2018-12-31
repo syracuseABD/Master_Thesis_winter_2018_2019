@@ -1,0 +1,98 @@
+\newcommand{\HOLprojectTypesDate}{27 December 2018}
+\newcommand{\HOLprojectTypesTime}{13:06}
+\begin{SaveVerbatim}{HOLprojectTypesDatatypescommands}
+\HOLFreeVar{commands} =
+    \HOLConst{PlatoonLeaderCOM} \HOLTyOp{platoonLeaderCom}
+  \HOLTokenBar{} \HOLConst{PlatoonSergeantCOM} \HOLTyOp{platoonSergeantCom}
+  \HOLTokenBar{} \HOLConst{OmniCOM} \HOLTyOp{omniCom}
+\end{SaveVerbatim}
+\newcommand{\HOLprojectTypesDatatypescommands}{\UseVerbatim{HOLprojectTypesDatatypescommands}}
+\begin{SaveVerbatim}{HOLprojectTypesDatatypesomniCom}
+\HOLFreeVar{omniCom} = \HOLConst{none} \HOLTokenBar{} \HOLConst{omniNA}
+\end{SaveVerbatim}
+\newcommand{\HOLprojectTypesDatatypesomniCom}{\UseVerbatim{HOLprojectTypesDatatypesomniCom}}
+\begin{SaveVerbatim}{HOLprojectTypesDatatypesoutput}
+\HOLFreeVar{output} = \HOLConst{Secure} \HOLTokenBar{} \HOLConst{Withdraw} \HOLTokenBar{} \HOLConst{Complete} \HOLTokenBar{} \HOLConst{ActionsIn}
+       \HOLTokenBar{} \HOLConst{NoActionTaken} \HOLTokenBar{} \HOLConst{UnAuthenticated} \HOLTokenBar{} \HOLConst{UnAuthorized}
+\end{SaveVerbatim}
+\newcommand{\HOLprojectTypesDatatypesoutput}{\UseVerbatim{HOLprojectTypesDatatypesoutput}}
+\begin{SaveVerbatim}{HOLprojectTypesDatatypesplatoonLeaderCom}
+\HOLFreeVar{platoonLeaderCom} = \HOLConst{secure} \HOLTokenBar{} \HOLConst{withdraw} \HOLTokenBar{} \HOLConst{complete}
+\end{SaveVerbatim}
+\newcommand{\HOLprojectTypesDatatypesplatoonLeaderCom}{\UseVerbatim{HOLprojectTypesDatatypesplatoonLeaderCom}}
+\begin{SaveVerbatim}{HOLprojectTypesDatatypesplatoonSergeantCom}
+\HOLFreeVar{platoonSergeantCom} = \HOLConst{actionsIn} \HOLTokenBar{} \HOLConst{psgNA}
+\end{SaveVerbatim}
+\newcommand{\HOLprojectTypesDatatypesplatoonSergeantCom}{\UseVerbatim{HOLprojectTypesDatatypesplatoonSergeantCom}}
+\begin{SaveVerbatim}{HOLprojectTypesDatatypesprincipal}
+\HOLFreeVar{principal} = \HOLConst{PlatoonLeader} \HOLTokenBar{} \HOLConst{PlatoonSergeant} \HOLTokenBar{} \HOLConst{Omni}
+\end{SaveVerbatim}
+\newcommand{\HOLprojectTypesDatatypesprincipal}{\UseVerbatim{HOLprojectTypesDatatypesprincipal}}
+\begin{SaveVerbatim}{HOLprojectTypesDatatypesstate}
+\HOLFreeVar{state} = \HOLConst{CONDUCT_PB} \HOLTokenBar{} \HOLConst{SECURE} \HOLTokenBar{} \HOLConst{ACTIONS_IN} \HOLTokenBar{} \HOLConst{WITHDRAW} \HOLTokenBar{} \HOLConst{COMPLETE}
+\end{SaveVerbatim}
+\newcommand{\HOLprojectTypesDatatypesstate}{\UseVerbatim{HOLprojectTypesDatatypesstate}}
+\newcommand{\HOLprojectTypesDatatypes}{
+\HOLprojectTypesDatatypescommands\HOLprojectTypesDatatypesomniCom\HOLprojectTypesDatatypesoutput\HOLprojectTypesDatatypesplatoonLeaderCom\HOLprojectTypesDatatypesplatoonSergeantCom\HOLprojectTypesDatatypesprincipal\HOLprojectTypesDatatypesstate}
+\begin{SaveVerbatim}{HOLprojectTypesTheoremscommandsXXdistinctXXclauses}
+\HOLTokenTurnstile{} (\HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{a\sp{\prime}} \HOLBoundVar{a}. \HOLConst{PlatoonLeaderCOM} \HOLBoundVar{a} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{PlatoonSergeantCOM} \HOLBoundVar{a\sp{\prime}}) \HOLSymConst{\HOLTokenConj{}}
+   (\HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{a\sp{\prime}} \HOLBoundVar{a}. \HOLConst{PlatoonLeaderCOM} \HOLBoundVar{a} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{OmniCOM} \HOLBoundVar{a\sp{\prime}}) \HOLSymConst{\HOLTokenConj{}}
+   \HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{a\sp{\prime}} \HOLBoundVar{a}. \HOLConst{PlatoonSergeantCOM} \HOLBoundVar{a} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{OmniCOM} \HOLBoundVar{a\sp{\prime}}
+\end{SaveVerbatim}
+\newcommand{\HOLprojectTypesTheoremscommandsXXdistinctXXclauses}{\UseVerbatim{HOLprojectTypesTheoremscommandsXXdistinctXXclauses}}
+\begin{SaveVerbatim}{HOLprojectTypesTheoremscommandsXXoneXXone}
+\HOLTokenTurnstile{} (\HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{a} \HOLBoundVar{a\sp{\prime}}.
+      (\HOLConst{PlatoonLeaderCOM} \HOLBoundVar{a} \HOLSymConst{=} \HOLConst{PlatoonLeaderCOM} \HOLBoundVar{a\sp{\prime}}) \HOLSymConst{\HOLTokenEquiv{}} (\HOLBoundVar{a} \HOLSymConst{=} \HOLBoundVar{a\sp{\prime}})) \HOLSymConst{\HOLTokenConj{}}
+   (\HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{a} \HOLBoundVar{a\sp{\prime}}.
+      (\HOLConst{PlatoonSergeantCOM} \HOLBoundVar{a} \HOLSymConst{=} \HOLConst{PlatoonSergeantCOM} \HOLBoundVar{a\sp{\prime}}) \HOLSymConst{\HOLTokenEquiv{}}
+      (\HOLBoundVar{a} \HOLSymConst{=} \HOLBoundVar{a\sp{\prime}})) \HOLSymConst{\HOLTokenConj{}} \HOLSymConst{\HOLTokenForall{}}\HOLBoundVar{a} \HOLBoundVar{a\sp{\prime}}. (\HOLConst{OmniCOM} \HOLBoundVar{a} \HOLSymConst{=} \HOLConst{OmniCOM} \HOLBoundVar{a\sp{\prime}}) \HOLSymConst{\HOLTokenEquiv{}} (\HOLBoundVar{a} \HOLSymConst{=} \HOLBoundVar{a\sp{\prime}})
+\end{SaveVerbatim}
+\newcommand{\HOLprojectTypesTheoremscommandsXXoneXXone}{\UseVerbatim{HOLprojectTypesTheoremscommandsXXoneXXone}}
+\begin{SaveVerbatim}{HOLprojectTypesTheoremsomniComXXdistinctXXclauses}
+\HOLTokenTurnstile{} \HOLConst{none} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{omniNA}
+\end{SaveVerbatim}
+\newcommand{\HOLprojectTypesTheoremsomniComXXdistinctXXclauses}{\UseVerbatim{HOLprojectTypesTheoremsomniComXXdistinctXXclauses}}
+\begin{SaveVerbatim}{HOLprojectTypesTheoremsoutputXXdistinctXXclauses}
+\HOLTokenTurnstile{} \HOLConst{Secure} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{Withdraw} \HOLSymConst{\HOLTokenConj{}} \HOLConst{Secure} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{Complete} \HOLSymConst{\HOLTokenConj{}} \HOLConst{Secure} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{ActionsIn} \HOLSymConst{\HOLTokenConj{}}
+   \HOLConst{Secure} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{NoActionTaken} \HOLSymConst{\HOLTokenConj{}} \HOLConst{Secure} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{UnAuthenticated} \HOLSymConst{\HOLTokenConj{}}
+   \HOLConst{Secure} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{UnAuthorized} \HOLSymConst{\HOLTokenConj{}} \HOLConst{Withdraw} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{Complete} \HOLSymConst{\HOLTokenConj{}}
+   \HOLConst{Withdraw} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{ActionsIn} \HOLSymConst{\HOLTokenConj{}} \HOLConst{Withdraw} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{NoActionTaken} \HOLSymConst{\HOLTokenConj{}}
+   \HOLConst{Withdraw} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{UnAuthenticated} \HOLSymConst{\HOLTokenConj{}} \HOLConst{Withdraw} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{UnAuthorized} \HOLSymConst{\HOLTokenConj{}}
+   \HOLConst{Complete} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{ActionsIn} \HOLSymConst{\HOLTokenConj{}} \HOLConst{Complete} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{NoActionTaken} \HOLSymConst{\HOLTokenConj{}}
+   \HOLConst{Complete} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{UnAuthenticated} \HOLSymConst{\HOLTokenConj{}} \HOLConst{Complete} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{UnAuthorized} \HOLSymConst{\HOLTokenConj{}}
+   \HOLConst{ActionsIn} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{NoActionTaken} \HOLSymConst{\HOLTokenConj{}} \HOLConst{ActionsIn} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{UnAuthenticated} \HOLSymConst{\HOLTokenConj{}}
+   \HOLConst{ActionsIn} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{UnAuthorized} \HOLSymConst{\HOLTokenConj{}} \HOLConst{NoActionTaken} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{UnAuthenticated} \HOLSymConst{\HOLTokenConj{}}
+   \HOLConst{NoActionTaken} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{UnAuthorized} \HOLSymConst{\HOLTokenConj{}} \HOLConst{UnAuthenticated} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{UnAuthorized}
+\end{SaveVerbatim}
+\newcommand{\HOLprojectTypesTheoremsoutputXXdistinctXXclauses}{\UseVerbatim{HOLprojectTypesTheoremsoutputXXdistinctXXclauses}}
+\begin{SaveVerbatim}{HOLprojectTypesTheoremsplatoonLeaderComXXdistinctXXclauses}
+\HOLTokenTurnstile{} \HOLConst{secure} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{withdraw} \HOLSymConst{\HOLTokenConj{}} \HOLConst{secure} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{complete} \HOLSymConst{\HOLTokenConj{}} \HOLConst{withdraw} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{complete}
+\end{SaveVerbatim}
+\newcommand{\HOLprojectTypesTheoremsplatoonLeaderComXXdistinctXXclauses}{\UseVerbatim{HOLprojectTypesTheoremsplatoonLeaderComXXdistinctXXclauses}}
+\begin{SaveVerbatim}{HOLprojectTypesTheoremsplatoonSergeantComXXdistinctXXclauses}
+\HOLTokenTurnstile{} \HOLConst{actionsIn} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{psgNA}
+\end{SaveVerbatim}
+\newcommand{\HOLprojectTypesTheoremsplatoonSergeantComXXdistinctXXclauses}{\UseVerbatim{HOLprojectTypesTheoremsplatoonSergeantComXXdistinctXXclauses}}
+\begin{SaveVerbatim}{HOLprojectTypesTheoremsprincipalXXdistinctXXclauses}
+\HOLTokenTurnstile{} \HOLConst{PlatoonLeader} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{PlatoonSergeant} \HOLSymConst{\HOLTokenConj{}} \HOLConst{PlatoonLeader} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{Omni} \HOLSymConst{\HOLTokenConj{}}
+   \HOLConst{PlatoonSergeant} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{Omni}
+\end{SaveVerbatim}
+\newcommand{\HOLprojectTypesTheoremsprincipalXXdistinctXXclauses}{\UseVerbatim{HOLprojectTypesTheoremsprincipalXXdistinctXXclauses}}
+\begin{SaveVerbatim}{HOLprojectTypesTheoremsstateXXdistinctXXclauses}
+\HOLTokenTurnstile{} \HOLConst{CONDUCT_PB} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{SECURE} \HOLSymConst{\HOLTokenConj{}} \HOLConst{CONDUCT_PB} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{ACTIONS_IN} \HOLSymConst{\HOLTokenConj{}}
+   \HOLConst{CONDUCT_PB} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{WITHDRAW} \HOLSymConst{\HOLTokenConj{}} \HOLConst{CONDUCT_PB} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{COMPLETE} \HOLSymConst{\HOLTokenConj{}}
+   \HOLConst{SECURE} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{ACTIONS_IN} \HOLSymConst{\HOLTokenConj{}} \HOLConst{SECURE} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{WITHDRAW} \HOLSymConst{\HOLTokenConj{}} \HOLConst{SECURE} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{COMPLETE} \HOLSymConst{\HOLTokenConj{}}
+   \HOLConst{ACTIONS_IN} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{WITHDRAW} \HOLSymConst{\HOLTokenConj{}} \HOLConst{ACTIONS_IN} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{COMPLETE} \HOLSymConst{\HOLTokenConj{}}
+   \HOLConst{WITHDRAW} \HOLSymConst{\HOLTokenNotEqual{}} \HOLConst{COMPLETE}
+\end{SaveVerbatim}
+\newcommand{\HOLprojectTypesTheoremsstateXXdistinctXXclauses}{\UseVerbatim{HOLprojectTypesTheoremsstateXXdistinctXXclauses}}
+\newcommand{\HOLprojectTypesTheorems}{
+\HOLThmTag{projectTypes}{commands_distinct_clauses}\HOLprojectTypesTheoremscommandsXXdistinctXXclauses
+\HOLThmTag{projectTypes}{commands_one_one}\HOLprojectTypesTheoremscommandsXXoneXXone
+\HOLThmTag{projectTypes}{omniCom_distinct_clauses}\HOLprojectTypesTheoremsomniComXXdistinctXXclauses
+\HOLThmTag{projectTypes}{output_distinct_clauses}\HOLprojectTypesTheoremsoutputXXdistinctXXclauses
+\HOLThmTag{projectTypes}{platoonLeaderCom_distinct_clauses}\HOLprojectTypesTheoremsplatoonLeaderComXXdistinctXXclauses
+\HOLThmTag{projectTypes}{platoonSergeantCom_distinct_clauses}\HOLprojectTypesTheoremsplatoonSergeantComXXdistinctXXclauses
+\HOLThmTag{projectTypes}{principal_distinct_clauses}\HOLprojectTypesTheoremsprincipalXXdistinctXXclauses
+\HOLThmTag{projectTypes}{state_distinct_clauses}\HOLprojectTypesTheoremsstateXXdistinctXXclauses
+}

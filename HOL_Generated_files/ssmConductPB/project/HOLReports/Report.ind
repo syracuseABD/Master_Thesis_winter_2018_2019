@@ -1,0 +1,56 @@
+\begin{theindex}
+
+  \item \textbf  {projectAssuranceExec Theory}, 23
+    \subitem Theorems, 23
+      \subsubitem ACTIONS_IN_exec_withdraw_lemma1, 23
+      \subsubitem ACTIONS_IN_exec_withdraw_lemma2, 24
+      \subsubitem ACTIONS_IN_exec_withdraw_thm, 24
+      \subsubitem CONDUCT_PB_exec_secure_lemma1, 25
+      \subsubitem CONDUCT_PB_exec_secure_lemma2, 25
+      \subsubitem CONDUCT_PB_exec_secure_thm, 26
+      \subsubitem SECURE_exec_actionsIn_lemma1, 26
+      \subsubitem SECURE_exec_actionsIn_lemma2, 26
+      \subsubitem SECURE_exec_actionsIn_thm, 27
+      \subsubitem WITHDRAW_exec_complete_lemma1, 28
+      \subsubitem WITHDRAW_exec_complete_lemma2, 28
+      \subsubitem WITHDRAW_exec_complete_thm, 29
+  \item \textbf  {projectSecurity Theory}, 19
+    \subitem Definitions, 20
+      \subsubitem globalAuth_def, 20
+      \subsubitem stateAuth_def, 20
+    \subitem Theorems, 20
+      \subsubitem authentication_def, 20
+      \subsubitem authentication_ind, 22
+  \item \textbf  {projectSM Theory}, 18
+    \subitem Theorems, 18
+      \subsubitem NOut_def, 18
+      \subsubitem NOut_ind, 18
+      \subsubitem NS_def, 19
+      \subsubitem NS_ind, 19
+  \item \textbf  {projectTypes Theory}, 3
+    \subitem Datatypes, 3
+    \subitem Theorems, 3
+      \subsubitem commands_distinct_clauses, 3
+      \subsubitem commands_one_one, 3
+      \subsubitem omniCom_distinct_clauses, 3
+      \subsubitem output_distinct_clauses, 4
+      \subsubitem platoonLeaderCom_distinct_clauses, 4
+      \subsubitem platoonSergeantCom_distinct_clauses, 4
+      \subsubitem principal_distinct_clauses, 4
+      \subsubitem state_distinct_clauses, 4
+  \item \textbf  {projectUtilities Theory}, 4
+    \subitem Theorems, 4
+      \subsubitem getOmniCOM_def, 4
+      \subsubitem getOmniCOM_ind, 5
+      \subsubitem getOmniCOMx_def, 5
+      \subsubitem getOmniCOMx_ind, 7
+      \subsubitem getPlatoonLeaderCOM_def, 8
+      \subsubitem getPlatoonLeaderCOM_ind, 8
+      \subsubitem getPlatoonLeaderCOMx_def, 9
+      \subsubitem getPlatoonLeaderCOMx_ind, 12
+      \subsubitem getPlatoonSergeantCOM_def, 13
+      \subsubitem getPlatoonSergeantCOM_ind, 13
+      \subsubitem getPlatoonSergeantCOMx_def, 13
+      \subsubitem getPlatoonSergeantCOMx_ind, 16
+
+\end{theindex}

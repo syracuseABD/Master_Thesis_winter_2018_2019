@@ -1,0 +1,5 @@
+default: theory
+
+clean: Holmake cleanAll
+
+theory: Holmake cleanAll; Holmake

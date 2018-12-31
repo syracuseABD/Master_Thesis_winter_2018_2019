@@ -1,0 +1,56 @@
+\contentsline {section}{\numberline {1}OMNIType Theory}{3}
+\contentsline {subsection}{\numberline {1.1}Datatypes}{3}
+\contentsline {subsection}{\numberline {1.2}Theorems}{3}
+\contentsline {section}{\numberline {2}ssm11 Theory}{4}
+\contentsline {subsection}{\numberline {2.1}Datatypes}{4}
+\contentsline {subsection}{\numberline {2.2}Definitions}{4}
+\contentsline {subsection}{\numberline {2.3}Theorems}{5}
+\contentsline {section}{\numberline {3}ssm Theory}{11}
+\contentsline {subsection}{\numberline {3.1}Datatypes}{11}
+\contentsline {subsection}{\numberline {3.2}Definitions}{12}
+\contentsline {subsection}{\numberline {3.3}Theorems}{13}
+\contentsline {section}{\numberline {4}satList Theory}{21}
+\contentsline {subsection}{\numberline {4.1}Definitions}{21}
+\contentsline {subsection}{\numberline {4.2}Theorems}{21}
+\contentsline {section}{\numberline {5}PBTypeIntegrated Theory}{21}
+\contentsline {subsection}{\numberline {5.1}Datatypes}{21}
+\contentsline {subsection}{\numberline {5.2}Theorems}{22}
+\contentsline {section}{\numberline {6}PBIntegratedDef Theory}{23}
+\contentsline {subsection}{\numberline {6.1}Definitions}{23}
+\contentsline {subsection}{\numberline {6.2}Theorems}{24}
+\contentsline {section}{\numberline {7}ssmPBIntegrated Theory}{28}
+\contentsline {subsection}{\numberline {7.1}Theorems}{28}
+\contentsline {section}{\numberline {8}ssmConductORP Theory}{35}
+\contentsline {subsection}{\numberline {8.1}Theorems}{35}
+\contentsline {section}{\numberline {9}ConductORPType Theory}{44}
+\contentsline {subsection}{\numberline {9.1}Datatypes}{44}
+\contentsline {subsection}{\numberline {9.2}Theorems}{45}
+\contentsline {section}{\numberline {10}ConductORPDef Theory}{46}
+\contentsline {subsection}{\numberline {10.1}Definitions}{46}
+\contentsline {subsection}{\numberline {10.2}Theorems}{47}
+\contentsline {section}{\numberline {11}ssmConductPB Theory}{51}
+\contentsline {subsection}{\numberline {11.1}Definitions}{51}
+\contentsline {subsection}{\numberline {11.2}Theorems}{52}
+\contentsline {section}{\numberline {12}ConductPBType Theory}{57}
+\contentsline {subsection}{\numberline {12.1}Datatypes}{57}
+\contentsline {subsection}{\numberline {12.2}Theorems}{57}
+\contentsline {section}{\numberline {13}ssmMoveToORP Theory}{58}
+\contentsline {subsection}{\numberline {13.1}Definitions}{58}
+\contentsline {subsection}{\numberline {13.2}Theorems}{58}
+\contentsline {section}{\numberline {14}MoveToORPType Theory}{62}
+\contentsline {subsection}{\numberline {14.1}Datatypes}{62}
+\contentsline {subsection}{\numberline {14.2}Theorems}{63}
+\contentsline {section}{\numberline {15}ssmMoveToPB Theory}{63}
+\contentsline {subsection}{\numberline {15.1}Definitions}{63}
+\contentsline {subsection}{\numberline {15.2}Theorems}{64}
+\contentsline {section}{\numberline {16}MoveToPBType Theory}{68}
+\contentsline {subsection}{\numberline {16.1}Datatypes}{68}
+\contentsline {subsection}{\numberline {16.2}Theorems}{68}
+\contentsline {section}{\numberline {17}ssmPlanPB Theory}{69}
+\contentsline {subsection}{\numberline {17.1}Theorems}{69}
+\contentsline {section}{\numberline {18}PlanPBType Theory}{79}
+\contentsline {subsection}{\numberline {18.1}Datatypes}{79}
+\contentsline {subsection}{\numberline {18.2}Theorems}{79}
+\contentsline {section}{\numberline {19}PlanPBDef Theory}{82}
+\contentsline {subsection}{\numberline {19.1}Definitions}{82}
+\contentsline {subsection}{\numberline {19.2}Theorems}{83}
